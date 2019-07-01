@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.TAnnouncementMapper" >
+  <resultMap id="BaseResultMap" type="bean.TAnnouncement" >
+    <id column="nid" property="nid" jdbcType="INTEGER" />
+    <result column="announcement" property="announcement" jdbcType="VARCHAR" />
+    <result column="annotime" property="annotime" jdbcType="TIMESTAMP" />
+  </resultMap>
+
+  <sql id="Base_Column_List">
+    nid,announcement,annotime
+  </sql>
+
+  <!--发布公告-->
+  <insert id="insertAnnoucement" parameterType="java.lang.String">
+     insert into `t_ announcement`(announcement,annotime)
+     VALUES (#{announcement},NOW())
+  </insert>
+
+  <!--后台查看公告列表-->
+  <select id="findAnnoList" resultMap="BaseResultMap">
+      select
+      <include refid="Base_Column_List"/>
+      from `t_ announcement`
+  </select>
+
+  <!--删除公告-->
+  <delete id="deleteAnnocement" parameterType="java.lang.Integer">
+     DELETE from `t_ announcement` where nid = #{nid}
+  </delete>
+
+  <!--首页查看公告，取最新一条-->
+  <select id="findAnnoInfo" resultMap="BaseResultMap">
+     select
+    <include refid="Base_Column_List"/>
+    from `t_ announcement` order by annotime desc LIMIT 6
+  </select>
+</mapper>

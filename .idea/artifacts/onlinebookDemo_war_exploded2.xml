@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="onlinebookDemo:war exploded2">
+    <output-path>$PROJECT_DIR$/classes/artifacts/onlinebookDemo_war_exploded2</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="onlinebookDemo" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="Maven: com.alibaba:jconsole:1.8.0" module-name="onlinebookDemo" />
+          <element id="library" level="module" name="Maven: com.alibaba:tools:1.8.0" module-name="onlinebookDemo" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="onlinebookDemo/web/Web" />
+    </root>
+  </artifact>
+</component>

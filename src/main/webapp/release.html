@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发布希望同闲置书籍页面</title>
+    <link rel="stylesheet" href="layui/css/layui.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/message.css">
+	<link rel="stylesheet" type="text/css" href="css/release.css">
+	<script src="layui/layui.js"></script>
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="js/release.js"></script>
+	<script type="text/javascript" src="js/util/release.js"></script>
+	<!--<script type="text/javascript">-->
+		<!--//上传书的图片-->
+                <!--// 选择图片显示-->
+        <!--function imgChange(obj) {-->
+        <!--//获取点击的文本框-->
+        <!--var file =document.getElementById("file");-->
+        <!--var imgUrl =window.URL.createObjectURL(file.files[0]);-->
+        <!--var img =document.getElementById('bookimg');-->
+        <!--img.setAttribute('src',imgUrl); // 修改img标签src属性值-->
+        <!--};-->
+	<!--</script>-->
+</head>
+<body>
+	<!-- nav部分开始 -->
+    <div class="site-nav">
+    	<div class="w">
+    		<div class="fl"><a href="index.html">返回首页</a></div>
+    		<div class="fr">
+    			<ul>
+    				<li class="people">
+                        <span></span>
+                        <a href="personal.html">个人中心</a>
+                    </li>
+    				<li class="shu"></li>
+    				<li><a href="login.html">登录</a></li>
+    				<li class="shu"></li>
+    				<li><a href="register-one.html">注册</a></li>
+    				<li class="car">
+                        <a href="javascript:void(0)">
+                            <span></span>
+                            <i class="car-mag">1</i>
+                        </a>
+                    </li>
+    			</ul>
+    		</div>
+    	</div>
+    </div>
+    <!-- nav部分结束 -->
+
+    <!-- search部分开始 -->
+    <div class="search">
+        <div class="w">
+            <div class="search-logo fl">
+                <div class="search-logo1"></div>
+                <div class="search-logo2"></div>
+            </div>
+            <div class="search-book">
+                <div class="search-bookname">
+                    <a href="javascript:void(0)">书名
+                        <i><s>◇</s></i>
+                    </a>
+                </div>
+                <div class="search-more" style="display: none;">
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">小王子</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">活着</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">围城</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">百年孤独</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">我不</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">三体</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">摄影艺术</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">追风筝的人</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                </div>
+            </div>
+            <div class="search-input">
+                <input type="text" value="请输入图书关键字" onfocus="if (value =='请输入图书关键字'){value =''}" onblur="if (value ==''){value='请输入图书关键字'}" />
+                <button>搜索</button>
+                </div>
+            <button class="search-publish" style="visibility: hidden;">发布</button>
+            <!-- <button class="search-call">联系管理员</button> -->
+            <div class="search-Alinkmore ">
+                <a href="javascript:void(0)" class="blue-red">热门搜索：</a>
+                <a href="javascript:void(0)">摆渡人</a>
+                <a href="javascript:void(0)">小王子</a>
+                <a href="javascript:void(0)">挪威的森林</a>
+                <a href="javascript:void(0)">扶摇皇后</a>
+            </div>
+        </div>
+    </div>
+    <!-- search部分结束 -->
+
+    <!-- release-main部分开始 -->
+    <div class="clearfix"></div>
+    <div class="w release-main">
+    	<div class="release-div">
+    		<p class="issue issue-current">发布希望书籍</p>
+    		<p class="issue">发布闲置书籍</p>
+    		<div class="issue-details hope-details">
+                <form id="bookForm1">
+    			<label><i>*</i>类别：</label>
+                    <div class="layui-input-inline">
+                        <select id="bookClass1">
+                            <option>请选择书籍种类</option>
+                        </select>
+                    </div>
+                    <div class="layui-input-inline">
+                        <select id="book1">
+                        </select>
+                    </div>
+                <table id="HopeBooTable" lay-filter="test"></table>
+                </form>
+                <center>
+                    <button class="layui-btn" style="color: white; background-color: #49A8FA">返回</button>
+                    <button class="layui-btn" id="publishHopebook" style="color: white;background-color: #49A8FA">发布</button>
+                </center>
+            </div>
+    		<div class="issue-details issue-hide unuse-details">
+    			<div class="details-l fl">
+    			<form>
+    			<label><i>*</i>类别：</label>
+    			<select id="bookClass2">
+                </select>
+                <select id="book2">
+                </select><br>
+                </form>
+                <form  id="bookForm2" enctype="multipart/form-data" action="PublishInaBook.action" method="post">
+                    ID:<input type="text" name="cid" id="cid">
+                    书籍：<input type="text" name="bookName1" id="bookName1">
+                <label><i>*</i>上传图片：</label>
+                <a href="javascript:;" class="file gradient">请上传图片，大小不能超过5M。
+                	<input type="file"name="file"id="file"/>
+                </a>
+                <div id="preview">
+                <!--<img id="bookimg" src="/style/images/blank.gif"width="375"height="60" />-->
+                </div>
+                    <table id="HopeBooTable2" lay-filter="test2"></table>
+                <button id="publishButton" class="layui-btn">确定发布</button>
+                </form>
+                </div>
+                <div class="details-r fr">
+                	<p class="tips"><i>*</i>当您不清楚该书籍类别时，您可以通过以下方式查询</p>
+                	<form>
+                	<p>书籍分类提示</p>
+                	<input type="text" name="" id="author" placeholder="作者"><br>
+                	<input type="text" name="" id="bookname" placeholder="书籍名称"><br>
+                	<input type="text" name="" id="publishPlace" placeholder="出版社"><br>
+                	</form>
+                    <center>
+                    <button class="layui-btn" id="Search" style="color: white;background-color: #3B9DD8">匹配</button>
+                    <button class="layui-btn" style="color: white;background-color: #3B9DD8">重置</button>
+                    </center>
+                </div>
+    		</div>
+    	</div>
+    </div>
+    <!-- release-main部分结束 -->
+    <!-- footer部分开始 -->
+    <div class="footer-box">
+    <div class="footer-bottom w">
+        <div class="footer-bottom-links">
+            <a href="javascript:void(0)">网站首页</a>|
+            <a href="javascript:void(0)">网站简介</a>|
+            <a href="javascript:void(0)">图书排行榜</a>|
+            <a href="javascript:void(0)">联系管理员</a>|
+            <a href="javascript:void(0)">意见反馈</a>|
+            <a href="javascript:void(0)">联系我们</a>|
+            <a href="javascript:void(0)">免费注册</a>|
+            <a href="javascript:void(0)">常见问题</a>
+        </div>
+        <div class="footer-bottom-copyright">
+            <p>版权归友书借书网所有</p>
+            <p>地址：广东省茂名市茂南区官渡二路广东石油化工学院</p>
+            <p>邮箱：123456789@qq.com</p>
+            <p>电话：17819185555</p>
+        </div>
+    </div>
+    </div>
+    <!-- footer部分结束 -->
+</body>
+</html>

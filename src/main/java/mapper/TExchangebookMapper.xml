@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.TExchangebookMapper" >
+  <resultMap id="BaseResultMap" type="bean.TExchangebook" >
+    <id column="eid" property="eid" jdbcType="INTEGER" />
+    <result column="bookid" property="bookid" jdbcType="INTEGER" />
+    <result column="borrower_id" property="borrowerId" jdbcType="BIGINT" />
+    <result column="borrower_name" property="borrowerName" jdbcType="VARCHAR" />
+    <result column="starttime" property="starttime" jdbcType="VARCHAR" />
+    <result column="stoptime" property="stoptime" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <!--记录交换书籍-->
+  <insert id="insertTExchangebook" parameterType="bean.TExchangebook">
+    insert into t_exchangebook(bookid,borrower_id,borrower_name,status)
+    VALUES (#{bookid},#{borrowerId},#{borrowerName},#{status})
+  </insert>
+
+  <!--删除交换表中的记录-->
+  <delete id="deleteTExchangeBook" parameterType="java.lang.Integer">
+    delete from t_exchangebook where eid = #{eid}
+  </delete>
+
+  <!--确认借书-->
+  <update id="updateTExchangeSureLend">
+     update t_exchangebook set stoptime = #{stoptime} ,`status`='待确定'
+     where bookid = #{bookid} and `status`='待通过'
+  </update>
+
+  <!--修改书籍状态为未还，并记录开始借书时间-->
+  <update id="updateTExchangeHadLend">
+    update t_exchangebook set starttime = curdate() ,`status`='未还'
+    where bookid = #{bookid} and `status`='待确定'
+  </update>
+
+  <!--延长借书日期-->
+  <update id="updateBorrowTime">
+    update t_exchangebook
+    set stoptime = #{stoptime}
+    where bookid = #{bookid} and `status`='未还'
+  </update>
+
+  <!--借入者确认还书-->
+  <update id="updatereturnExcBook">
+    update t_exchangebook set `status`='已还'
+    where eid=#{eid}
+  </update>
+
+  <!--查看借过改本书籍的人-->
+  <select id="findHaveBorrowthisBook" resultMap="BaseResultMap">
+    select * from t_exchangebook where bookid = #{bookid} limit 6
+  </select>
+</mapper>

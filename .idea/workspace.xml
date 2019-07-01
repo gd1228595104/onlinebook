@@ -1,0 +1,1145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="onlinebookDemo:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3cabdceb-c3de-41fc-8a1a-3b0dea054d58" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/Emailutil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/onlinebookDemo_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/onlinebookDemo_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/onlinebookDemo_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/onlinebookDemo_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/TStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/TStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/StuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/StuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapper/mapperVo/TExchangebookVoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapper/mapperVo/TExchangebookVoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/serviceImpl/CheckLoginAOP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/serviceImpl/CheckLoginAOP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/MyWebSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/MyWebSocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/book-message-two.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/book-message-two.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/util/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/util/chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/util/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/util/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/util/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/util/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/lay/loadEvalueTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lay/loadEvalueTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/personal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/personal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register-one.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register-one.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/onlinebookDemo-1.0-SNAPSHOT/WEB-INF/classes/bean/TStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/onlinebookDemo-1.0-SNAPSHOT/WEB-INF/classes/bean/TStudent.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="onlinebookDemo" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/StuController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1440">
+              <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+              <folding>
+                <element signature="e#1462#1463#0" expanded="true" />
+                <element signature="e#1509#1510#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/register-two.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/register-one.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/register.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="417" column="20" lean-forward="true" selection-start-line="417" selection-start-column="20" selection-end-line="417" selection-end-column="20" />
+              <folding>
+                <element signature="e#40#71#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/personal.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="283" column="95" selection-start-line="283" selection-start-column="95" selection-end-line="283" selection-end-column="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/serviceImpl/StuServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1950">
+              <caret line="79" column="69" selection-start-line="79" selection-start-column="69" selection-end-line="79" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/StuService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1080">
+              <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bean/TStudent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/serviceImpl/CheckLoginAOP.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/webapp/lay/loadStuInfo.js" />
+        <option value="$PROJECT_DIR$/src/main/java/mapper/TAnnouncementMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/mapper/TAnnouncementMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/AnnouncementController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mapper/THopebookMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/mapper/THopebookMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mapper/TBookclassMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mapper/TBookclassMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/mapper/TBookMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/PublishBookService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/serviceImpl/PublishBookServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/release.css" />
+        <option value="$PROJECT_DIR$/src/main/java/bean/TBookList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mapper/TBookMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/util/release.js" />
+        <option value="$PROJECT_DIR$/src/main/java/util/FileUploadUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/test.html" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/PublishBookController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/release.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/personal.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/personal-tab.js" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/BorrowController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mapper/TExchangebookMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.html" />
+        <option value="$PROJECT_DIR$/src/main/java/service/serviceImpl/BorrowServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/testbean/Message.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/msgBean/Message.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/util/login.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/util/indexWebSocket.js" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/ChangeHref.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/message.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/util/book-message-two.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/manage-false.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/util/chat.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/chat.html" />
+        <option value="$PROJECT_DIR$/src/main/java/util/MyWebSocket.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/chat.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/util/index.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/lay/loadEvalueTable.js" />
+        <option value="$PROJECT_DIR$/src/main/java/mapper/mapperVo/TExchangebookVoMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/book-message-two.html" />
+        <option value="$PROJECT_DIR$/src/main/java/service/serviceImpl/StuServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/util/register.js" />
+        <option value="$PROJECT_DIR$/src/main/java/bean/TStudent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/serviceImpl/CheckLoginAOP.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/StuController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/register-one.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/register.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/personal.html" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="onlinebookDemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="onlinebookDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinebookDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlinebookDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinebookDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlinebookDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinebookDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlinebookDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinebookDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlinebookDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinebookDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlinebookDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinebookDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlinebookDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinebookDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="mapperVo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlinebookDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinebookDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlinebookDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinebookDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="serviceImpl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlinebookDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinebookDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlinebookDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinebookDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlinebookDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinebookDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlinebookDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinebookDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="RequestingBook&#9;PSI&#9;JAVA://controller.BorrowController#RequestingBook&#10;SearchBa&#9;PSI&#9;JAVA://controller.ScanBookController#SearchBar&#10;lengthenTime&#9;PSI&#9;JAVA://controller.BorrowController#LengthenTime&#10;ReturnInaBook&#9;PSI&#9;JAVA://controller.BorrowController#ReturnInaBook&#10;SureBorrow&#9;PSI&#9;JAVA://controller.BorrowController#SureBorrow&#10;sureL&#9;PSI&#9;JAVA://service.BorrowService#sureLend&#10;SureLend&#9;PSI&#9;JAVA://controller.BorrowController#SureLend&#10;personal-center&#9;null&#9;null&#10;updatePassAcvaFailInfo&#9;PSI&#9;JAVA://mapper.TCheckMapper#updatePassAcvaFailInfo&#10;AcvationFailInfo&#9;null&#9;null&#10;login-o&#9;null&#9;null&#10;findWithLoginAndPdw&#9;PSI&#9;JAVA://mapper.TStudentMapper#findWithLoginAndPdw" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\YouShu (1)\onlinebookDemo\src\main\java\util" />
+      <recent name="C:\Users\Administrator\Desktop\YouShu (1)\onlinebookDemo\src\main\webapp\images" />
+      <recent name="C:\Users\Administrator\Desktop\youshu\onlinebookDemo\src\main\webapp" />
+      <recent name="C:\Users\Administrator\Desktop\youshu\onlinebookDemo\src\main\webapp\js" />
+      <recent name="C:\Users\Administrator\Desktop\youshu\onlinebookDemo\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="util" />
+      <recent name="api" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\youshu\onlinebookDemo\src\main\webapp\page" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.85" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="update-resources" />
+      <deployment>
+        <artifact name="onlinebookDemo:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_onlinebookDemo_5" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52855" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="onlinebookDemo:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3cabdceb-c3de-41fc-8a1a-3b0dea054d58" name="Default" comment="" />
+      <created>1552823399726</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552823399726</updated>
+      <workItem from="1552823406125" duration="3721000" />
+      <workItem from="1552827174052" duration="6576000" />
+      <workItem from="1552833822184" duration="1183000" />
+      <workItem from="1552871592380" duration="17092000" />
+      <workItem from="1552975360139" duration="13639000" />
+      <workItem from="1552999240533" duration="2343000" />
+      <workItem from="1553001630011" duration="151000" />
+      <workItem from="1553002778949" duration="1494000" />
+      <workItem from="1553004315222" duration="2898000" />
+      <workItem from="1553045452282" duration="898000" />
+      <workItem from="1553130300351" duration="599000" />
+      <workItem from="1553150303581" duration="10686000" />
+      <workItem from="1553257000163" duration="8950000" />
+      <workItem from="1553300098494" duration="5145000" />
+      <workItem from="1553318982828" duration="134000" />
+      <workItem from="1553342089490" duration="1994000" />
+      <workItem from="1553344226385" duration="219000" />
+      <workItem from="1553344579575" duration="5580000" />
+      <workItem from="1553392395782" duration="1493000" />
+      <workItem from="1553393921379" duration="5362000" />
+      <workItem from="1553487928827" duration="1212000" />
+      <workItem from="1553602228531" duration="7848000" />
+      <workItem from="1553930141303" duration="16329000" />
+      <workItem from="1553997971661" duration="16433000" />
+      <workItem from="1554101287325" duration="12134000" />
+      <workItem from="1554117465614" duration="1195000" />
+      <workItem from="1554118735263" duration="4870000" />
+      <workItem from="1554170063047" duration="22886000" />
+      <workItem from="1554249713844" duration="10058000" />
+      <workItem from="1554345693886" duration="604000" />
+      <workItem from="1554423713030" duration="3462000" />
+      <workItem from="1554452312296" duration="3797000" />
+      <workItem from="1554468809690" duration="62000" />
+      <workItem from="1554520218742" duration="2144000" />
+      <workItem from="1554681438124" duration="37319000" />
+      <workItem from="1554766836784" duration="2040000" />
+      <workItem from="1554776911038" duration="605000" />
+      <workItem from="1554810315640" duration="413000" />
+      <workItem from="1554815880472" duration="598000" />
+      <workItem from="1554886721172" duration="741000" />
+      <workItem from="1554951144929" duration="922000" />
+      <workItem from="1555078575034" duration="2225000" />
+      <workItem from="1555116154582" duration="30437000" />
+      <workItem from="1555201490944" duration="2164000" />
+      <workItem from="1555219911503" duration="3132000" />
+      <workItem from="1555246364411" duration="1246000" />
+      <workItem from="1555288459771" duration="12668000" />
+      <workItem from="1555330649953" duration="1223000" />
+      <workItem from="1555419141775" duration="603000" />
+      <workItem from="1555466902744" duration="613000" />
+      <workItem from="1555475541445" duration="34000" />
+      <workItem from="1555548307431" duration="645000" />
+      <workItem from="1555548986884" duration="18864000" />
+      <workItem from="1555572447334" duration="9237000" />
+      <workItem from="1555633447408" duration="8328000" />
+      <workItem from="1555726963851" duration="896000" />
+      <workItem from="1555728170649" duration="271000" />
+      <workItem from="1555815099679" duration="1022000" />
+      <workItem from="1556286477020" duration="744000" />
+      <workItem from="1556326427974" duration="101000" />
+      <workItem from="1556622481633" duration="36000" />
+      <workItem from="1557132496565" duration="490000" />
+      <workItem from="1557238963985" duration="12000" />
+      <workItem from="1557824496302" duration="182000" />
+      <workItem from="1559029903639" duration="1473000" />
+      <workItem from="1559631657750" duration="10502000" />
+      <workItem from="1559735564961" duration="4698000" />
+      <workItem from="1559910886648" duration="2076000" />
+      <workItem from="1559981373200" duration="12312000" />
+      <workItem from="1560044521095" duration="4224000" />
+      <workItem from="1560167548855" duration="778000" />
+    </task>
+    <task id="LOCAL-00001" summary="前端整合登录和后台失败信息表">
+      <created>1552995695715</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1552995695715</updated>
+    </task>
+    <task id="LOCAL-00002" summary="前端整合登录和后台失败信息表">
+      <created>1552995746231</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1552995746231</updated>
+    </task>
+    <task id="LOCAL-00003" summary="前端整合登录和后台失败信息表222">
+      <created>1552997885487</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552997885487</updated>
+    </task>
+    <task id="LOCAL-00004" summary="整合了大部分后台">
+      <created>1553319061152</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1553319061152</updated>
+    </task>
+    <task id="LOCAL-00005" summary="整合了大部分后台">
+      <created>1553935050061</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1553935050061</updated>
+    </task>
+    <task id="LOCAL-00006" summary="修改密码，退出登录。。。">
+      <created>1554101745661</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1554101745661</updated>
+    </task>
+    <task id="LOCAL-00007" summary="整合了大部分前后端">
+      <created>1554712999839</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1554712999839</updated>
+    </task>
+    <task id="LOCAL-00008" summary="整合了大部分前后端">
+      <created>1555246406266</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1555246406266</updated>
+    </task>
+    <task id="LOCAL-00009" summary="整合了申请书籍，聊天">
+      <created>1555641790946</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1555641790946</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="367065000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.73904383" visible="true" weight="0.211126" />
+      <window_info id="Structure" order="1" sideWeight="0.26095617" side_tool="true" weight="0.23257373" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.50212765" side_tool="true" weight="0.21849866" />
+      <window_info id="Web" order="6" sideWeight="0.50212765" side_tool="true" weight="0.21849866" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32952926" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22096318" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.48866856" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3281027" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32952926" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32952926" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32952926" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Statistic" order="15" weight="0.32952926" />
+      <window_info anchor="bottom" id="Docker" order="16" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="JSF" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3297587" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="CDI" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="right" id="Maven Projects" order="11" weight="0.3297587" />
+      <window_info anchor="right" id="Maven" order="12" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.73904383" visible="true" weight="0.19034852" />
+      <window_info id="Structure" order="1" sideWeight="0.26095617" side_tool="true" weight="0.23257373" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.50212765" side_tool="true" weight="0.21849866" />
+      <window_info id="Web" order="6" sideWeight="0.50212765" side_tool="true" weight="0.21849866" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32952926" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38516405" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.44079885" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3281027" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32952926" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32952926" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32952926" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32952926" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Statistic" order="15" weight="0.32952926" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="JSF" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3297587" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="CDI" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="right" id="Maven Projects" order="11" weight="0.3297587" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="前端整合登录和后台失败信息表" />
+    <MESSAGE value="前端整合登录和后台失败信息表222" />
+    <MESSAGE value="整合了大部分后台" />
+    <MESSAGE value="修改密码，退出登录。。。" />
+    <MESSAGE value="整合了大部分前后端" />
+    <MESSAGE value="整合了申请书籍，聊天" />
+    <option name="LAST_COMMIT_MESSAGE" value="整合了申请书籍，聊天" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/testController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/problem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="100" column="57" selection-start-line="100" selection-start-column="53" selection-end-line="100" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/message.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="456" column="33" selection-start-line="456" selection-start-column="33" selection-end-line="456" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="4" column="90246" selection-start-line="4" selection-start-column="90246" selection-end-line="4" selection-end-column="90246" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/chat.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/lay/loadStuTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="4" selection-start-line="2" selection-end-line="45" />
+          <folding>
+            <element signature="e#78#1417#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/PublishBookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1500">
+          <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Dawn的工具包/MyJavaUtil/JavaMail/util/Emailutil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1080" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage-false.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/Emailutil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/msgBean/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/util/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+          <folding>
+            <element signature="e#20#33#0" />
+            <element signature="e#565#2039#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="28" column="87" selection-start-line="28" selection-start-column="87" selection-end-line="28" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/util/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3960">
+          <caret line="153" column="4" lean-forward="true" selection-start-line="153" selection-start-column="4" selection-end-line="153" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/serviceImpl/ScanBookServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/util/book-message-two.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="93" column="52" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="52" />
+          <folding>
+            <element signature="e#117#381#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/MyWebSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/util/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+          <folding>
+            <element signature="e#924#1907#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ScanBookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="45" column="43" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="43" />
+          <folding>
+            <element signature="e#1870#1871#0" expanded="true" />
+            <element signature="e#1937#1938#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="282" selection-start-line="282" selection-end-line="282" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/chat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="26" column="62" selection-start-line="22" selection-start-column="8" selection-end-line="26" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/lay/loadProTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-943">
+          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/lay/loadTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2637">
+          <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/lay/loadStuInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1813" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/util/personal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2833" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/BorrowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="106" column="48" selection-start-line="106" selection-start-column="44" selection-end-line="106" selection-end-column="48" />
+          <folding>
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#3058#3059#0" expanded="true" />
+            <element signature="e#3123#3124#0" expanded="true" />
+            <element signature="e#3448#3449#0" expanded="true" />
+            <element signature="e#3510#3511#0" expanded="true" />
+            <element signature="e#3814#3815#0" expanded="true" />
+            <element signature="e#3883#3884#0" expanded="true" />
+            <element signature="e#4516#4517#0" expanded="true" />
+            <element signature="e#4576#4577#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/serviceImpl/BorrowServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="109" column="58" selection-start-line="109" selection-start-column="52" selection-end-line="109" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mapper/TExchangebookMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-296">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mapper/mapperVo/TInactivebookVoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-716" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/HobbiesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/PointsCntroller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mapper/mapperVo/TExchangebookVoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/book-message-two.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/lay/loadEvalueTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="592" column="28" selection-start-line="592" selection-start-column="28" selection-end-line="592" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/util/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/6.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/5.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/8.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/7.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/http.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/StuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+          <folding>
+            <element signature="e#1462#1463#0" expanded="true" />
+            <element signature="e#1509#1510#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/register-two.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/serviceImpl/StuServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1950">
+          <caret line="79" column="69" selection-start-line="79" selection-start-column="69" selection-end-line="79" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/StuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bean/TStudent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/serviceImpl/CheckLoginAOP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/register-one.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="417" column="20" lean-forward="true" selection-start-line="417" selection-start-column="20" selection-end-line="417" selection-end-column="20" />
+          <folding>
+            <element signature="e#40#71#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/personal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="283" column="95" selection-start-line="283" selection-start-column="95" selection-end-line="283" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

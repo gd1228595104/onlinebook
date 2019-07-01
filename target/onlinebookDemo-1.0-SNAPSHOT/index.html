@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>友书</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="layui/css/layui.css" media="all">
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/xin.js"></script>
+    <script type="text/javascript" src="js/arrow.js"></script>
+    <script type="text/javascript" src="js/alert.js"></script>
+    <script src="layui/layui.js"></script>
+    <script type="text/javascript" src="js/util/index.js"></script>
+    <script type="text/javascript" src="js/util/indexWebSocket.js"></script>
+</head>
+<body>
+    <div id="complain" class="hide">
+        <div class="complain-inside-box">
+        被投诉人学号：<input type="text" id="complainStuid">
+        <p>被投诉的原因：<i>*</i><span>投诉内容不少于10个字符</span></p>
+        <textarea id="complainContent"></textarea>
+        <button class="cancel-complain">取消</button>
+        <button class="sure-complain" id="confirm">确定</button>
+        </div>
+        
+    </div>
+     
+
+    <div class="complain-call-box">
+        <a href="javascript:void(0)" class="on-complain"><img src="images/complain.png" class="top-im">
+            <br>投诉</a><br>
+        <i></i>
+        <a href="javascript:void(0)">联<br>系<br>管<br>理<br>员</a>
+        <i></i>
+        <i class="arrow-top"></i>
+        <img src="images/arrow.png" id="bottom-im">
+    </div> 
+	<!-- nav部分开始 -->
+    <div class="site-nav">
+    	<div class="w">
+    		<div class="fl"><a href="index.html">返回首页</a></div>
+    		<div class="fr">
+    			<ul>
+    				<li class="people">
+                        <span></span>
+                        <a href="personal.html">个人中心</a>
+                    </li>
+    				<li class="shu"></li>
+    				<li><a href="login.html">登录</a></li>
+    				<li class="shu"></li>
+    				<li><a href="register-one.html">注册</a></li>
+    				<li class="car">
+                        <a href="javascript:void(0)">
+                            <span></span>
+                            <i class="car-mag">1</i>
+                        </a>
+                    </li>
+    			</ul>
+    		</div>
+    	</div>
+    </div>
+    <!-- nav部分结束 -->
+
+    <!-- search部分开始 -->
+    <div class="search">
+        <div class="w">
+            <div class="search-logo fl">
+                <div class="search-logo1"></div>
+                <div class="search-logo2"></div>
+            </div>
+            <div class="search-book">
+                <div class="search-bookname">
+                    <!--<a href="javascript:void(0)">书名-->
+                        <!--<i><s>◇</s></i>-->
+                    <!--</a>-->
+                    <a>
+                        <select  id="searchParam"  style="border: 0">
+                            <option value=""></option>
+                            <option value="作者">作者</option>
+                            <option value="书名">书名</option>
+                        </select>
+                    </a>
+                </div>
+                <div class="search-more" style="display:none;padding: 0px;border-width: 0px;">
+                    <a href="javascript:void(0)"><span>围城</span></a>
+                    <a href="javascript:void(0)"><span>小王子</span></a>
+                    <a href="javascript:void(0)"><span>我不</span></a>
+                    <a href="javascript:void(0)"><span>摆渡人</span></a>
+                    <a href="javascript:void(0)"><span>百年孤独</span></a>
+                    <a href="javascript:void(0)"><span>苏菲的世界</span></a>
+                    <a href="javascript:void(0)"><span>白夜行</span></a>
+                    <a href="javascript:void(0)"><span>活着</span></a>
+                    <a href="javascript:void(0)"><span>盗墓笔记</span></a>
+                    <a href="javascript:void(0)"><span>三体</span></a>
+                    <a href="javascript:void(0)"><span>再袭面包店</span></a>
+                    <a href="javascript:void(0)"><span>流放七月</span></a>
+                    <a href="javascript:void(0)"><span>乖，摸摸头</span></a>
+                    <a href="javascript:void(0)"><span>孤儿列车</span></a>
+                    <a href="javascript:void(0)"><span>偷影子的人</span></a>
+                    <a href="javascript:void(0)"><span>国境以南</span></a>
+                </div>
+            </div>
+            <div class="search-input">
+                <input type="text" id="searchText" value="请输入图书关键字" onfocus="if (value =='请输入图书关键字'){value =''}" onblur="if (value ==''){value='请输入图书关键字'}" />
+                <button id="searchButton">搜索</button>
+            </div>
+            <button class="search-publish">发布</button>
+            <div class="search-Alinkmore ">
+                <a href="javascript:void(0)" class="blue-red">热门搜索：</a>
+                <a href="javascript:void(0)">摆渡人</a>
+                <a href="javascript:void(0)">小王子</a>
+                <a href="javascript:void(0)">挪威的森林</a>
+                <a href="javascript:void(0)">扶摇皇后</a>
+            </div>
+        </div>
+    </div>
+    <!-- search部分结束 -->
+
+
+    <!-- top-banner部分开始 -->
+    <div class="top-banner">
+        <div class="w">
+            <div class="banner"></div>
+            <div class="notice-board">
+                <a href="javascript:void(0)" class="notice-board-title">公告栏</a>
+                <div id="notice-box">
+                    <ul>
+                        <li>
+                            
+                            <a href="javascript:void(0)">
+                                <i class="dot"></i><label id="ano1">如何在该网站借到喜欢的书籍</label>
+                            </a>
+                            <span id="anotime1">2019-03-18</span>
+                        </li>
+                        <li>
+                            
+                            <a href="javascript:void(0)">
+                                 <i class="dot"></i><label id="ano2">据说，这本书大家都在求</label>
+                            </a>
+                            <span id="anotime2">2019-03-18</span>
+                        </li>
+                        <li>
+                            
+                            <a href="javascript:void(0)">
+                                 <i class="dot"></i><label id="ano3">不用愁，大学生的课本这里都能借</label>
+                            </a>
+                            <span id="anotime3">2019-03-18</span>
+                        </li>
+                        <li>
+                            
+                            <a href="javascript:void(0)">
+                                 <i class="dot"></i>
+                                 <label id="ano4">这些可遇而不可求的书，你都借到了吗</label>
+                            </a>
+                            <span id="anotime4">2019-03-18</span>
+                        </li>
+                        <li>
+                            
+                            <a href="javascript:void(0)">
+                                  <i class="dot"></i>
+                                <label id="ano5">如何在该网站借到喜欢的书籍</label>
+                            </a>
+                            <span id="anotime5">2019-03-18</span>
+                        </li>
+                        <li>
+                            
+                            <a href="javascript:void(0)"><i class="dot"></i>
+                                <label id="ano6">据说，这本书大家都在求</label></a>
+                            <span id="anotime6">2019-03-18</span>
+                        </li>
+                        
+                        <li>
+                            
+                            <a href="javascript:void(0)"><i class="dot"></i>不用愁，大学生的课本这里都能借</a>
+                            <span>2019-03-18</span>
+                        </li>
+                        <li>
+
+                            <a href="javascript:void(0)"><i class="dot"></i>这些可遇而不可求的书，你都借到了吗</a>
+                            <span>2019-03-18</span>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- top-banner部分结束 -->
+
+
+	<!-- main部分开始 -->
+    <div class="main w clearfix">
+        <div class="main-leftside fl">
+            <div class="main-leftside-top">
+                <div class="classify">图&nbsp书&nbsp分&nbsp类</div>
+                <div class="sort">
+                    <p>文学</p>
+                    <span><a href="javascript:void(0)">小说</a></span>
+                    <span><a href="javascript:void(0)">随笔</a></span>
+                    <span><a href="javascript:void(0)">散文</a></span>
+                    <span><a href="javascript:void(0)">诗歌</a></span>
+                    <span><a href="javascript:void(0)">童话</a></span>
+                    <span><a href="javascript:void(0)">名著</a></span>
+                    <span><a href="javascript:void(0)">港台</a></span>
+                    <span><a href="javascript:void(0)" class="more">更多></a></span>
+                </div>
+                <div class="sort">
+                    <p>流行</p>
+                    <span><a href="javascript:void(0)">小说</a></span>
+                    <span><a href="javascript:void(0)">随笔</a></span>
+                    <span><a href="javascript:void(0)">散文</a></span>
+                    <span><a href="javascript:void(0)">诗歌</a></span>
+                    <span><a href="javascript:void(0)">童话</a></span>
+                    <span><a href="javascript:void(0)">名著</a></span>
+                    <span><a href="javascript:void(0)">港台</a></span>
+                    <span><a href="javascript:void(0)" class="more">更多></a></span>
+                </div>
+                <div class="sort">
+                    <p>文化</p>
+                    <span><a href="javascript:void(0)">历史</a></span>
+                    <span><a href="javascript:void(0)">传记</a></span>
+                    <span><a href="javascript:void(0)">哲学</a></span>
+                    <span><a href="javascript:void(0)">设计</a></span>
+                    <span><a href="javascript:void(0)">建筑</a></span>
+                    <span><a href="javascript:void(0)">电影</a></span>
+                    <span><a href="javascript:void(0)">音乐</a></span>
+                    <span><a href="javascript:void(0)" class="more">更多></a></span>
+                </div>
+                <div class="sort">
+                    <p>生活</p>
+                    <span><a href="javascript:void(0)">旅行</a></span>
+                    <span><a href="javascript:void(0)">励志</a></span>
+                    <span><a href="javascript:void(0)">家居</a></span>
+                    <span><a href="javascript:void(0)">健康</a></span>
+                    <span><a href="javascript:void(0)">教育</a></span>
+                    <span><a href="javascript:void(0)">美食</a></span>
+                    <span><a href="javascript:void(0)">职场</a></span>
+                    <span><a href="javascript:void(0)" class="more">更多></a></span>
+                </div>
+                <div class="sort">
+                    <p>科技</p>
+                    <span><a href="javascript:void(0)">编程</a></span>
+                    <span><a href="javascript:void(0)">算法</a></span>
+                    <span><a href="javascript:void(0)">通信</a></span>
+                    <span><a href="javascript:void(0)">语言</a></span>
+                    <span><a href="javascript:void(0)">科普</a></span>
+                    <span><a href="javascript:void(0)">网络</a></span>
+                    <span><a href="javascript:void(0)">交互</a></span>
+                    <span><a href="javascript:void(0)" class="more">更多></a></span>
+                </div>
+                <div class="sort">
+                    <p>经管</p>
+                    <span><a href="javascript:void(0)">管理</a></span>
+                    <span><a href="javascript:void(0)">企业</a></span>
+                    <span><a href="javascript:void(0)">商业</a></span>
+                    <span><a href="javascript:void(0)">股票</a></span>
+                    <span><a href="javascript:void(0)">理财</a></span>
+                    <span><a href="javascript:void(0)">营销</a></span>
+                    <span><a href="javascript:void(0)">经济</a></span>
+                    <span><a href="javascript:void(0)" class="more">更多></a></span>
+                </div>
+            </div>
+            <div class="main-leftside-bottom">
+                <div class="newbook-recommend">新&nbsp书&nbsp推&nbsp荐</div>
+                <ul>
+                    <li><a href="javascript:void(0)"><i class="dot"></i>雷沙革村的读墨人<i class="star">★★★☆☆</i></a></li>
+                    <li><a href="javascript:void(0)"><i class="dot"></i>日本未来时<i class="star">★★★☆☆</i></a></li>
+                    <li><a href="javascript:void(0)"><i class="dot"></i>认识经济<i class="star">★★★★☆</i></a></li>
+                    <li><a href="javascript:void(0)"><i class="dot"></i>天边一星子<i class="star">★★★★☆</i></a></li>
+                    <li><a href="javascript:void(0)"><i class="dot"></i>太空无人生还<i class="star">★☆☆☆☆</i></a></li>
+                    <li><a href="javascript:void(0)"><i class="dot"></i>江宁探案录<i class="star">★★☆☆☆</i></a></li>
+                    <li><a href="javascript:void(0)"><i class="dot"></i>下雨的书店<i class="star">★★★☆☆</i></a></li>
+                    <li><a href="javascript:void(0)"><i class="dot"></i>古希腊抒情诗集<i class="star">★★☆☆☆</i></a></li>
+                    <li><a href="javascript:void(0)"><i class="dot"></i>布鲁克林的巴别塔<i class="star">★★★☆☆</i></a></li>
+                    <li><a href="javascript:void(0)"><i class="dot"></i>考工记<i class="star">★☆☆☆☆</i></a></li>
+                    <li><a href="javascript:void(0)"><i class="dot"></i>设计与真理<i class="star">★★★☆☆</i></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="main-rightside fr" id="mainbook">
+
+            <div class="clearfix"></div>
+            <div class="jump">
+                <button class="word">上一页</button>
+                <button class="digital">1</button>
+                <button class="digital">2</button>
+                <button class="digital">3</button>
+                <button class="word">下一页</button>
+                <input type="text" id="inp4" value="23" onfocus="if (value =='23'){value =''}" onblur="if (value ==''){value='23'}" />
+                <button class="word">跳转</button>
+            </div>
+        </div>
+    </div>
+    <!-- main部分结束 -->
+
+    <!-- footer部分开始 -->
+    <div class="footer-box">
+    <div class="footer-bottom w">
+        <div class="footer-bottom-links">
+            <a href="javascript:void(0)">网站首页</a>|
+            <a href="javascript:void(0)">网站简介</a>|
+            <a href="javascript:void(0)">图书排行榜</a>|
+            <a href="javascript:void(0)">联系管理员</a>|
+            <a href="javascript:void(0)">意见反馈</a>|
+            <a href="javascript:void(0)">联系我们</a>|
+            <a href="backman-login.html">管理员后台</a>|
+            <a href="javascript:void(0)">常见问题</a>
+        </div>
+        <div class="footer-bottom-copyright">
+            <p>版权归友书借书网所有</p>
+            <p>地址：广东省茂名市茂南区官渡二路广东石油化工学院</p>
+            <p>邮箱：123456789@qq.com</p>
+            <p>电话：17819185555</p>
+        </div>
+    </div>
+    </div>
+    <!-- footer部分结束 -->
+
+
+
+</body>
+</html>

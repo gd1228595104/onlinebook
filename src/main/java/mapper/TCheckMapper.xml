@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.TCheckMapper" >
+  <resultMap id="BaseResultMap" type="bean.TCheck" >
+    <id column="c_id" property="cId" jdbcType="INTEGER" />
+    <result column="c_sid" property="cSid" jdbcType="INTEGER" />
+    <result column="c_name" property="cName" jdbcType="VARCHAR" />
+    <result column="c_sex" property="cSex" jdbcType="VARCHAR" />
+    <result column="c_department" property="cDepartment" jdbcType="VARCHAR" />
+    <result column="c_major" property="cMajor" jdbcType="VARCHAR" />
+    <result column="c_grade" property="cGrade" jdbcType="VARCHAR" />
+    <result column="c_class" property="cClass" jdbcType="VARCHAR" />
+    <result column="c_IDCard" property="cIdcard" jdbcType="VARCHAR" />
+    <result column="c_email" property="cEmail" jdbcType="VARCHAR" />
+    <result column="c_photo" property="cPhoto" jdbcType="VARCHAR" />
+    <result column="c_status" property="cStatus" jdbcType="VARCHAR" />
+    <result column="c_reason" property="cReason" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <sql id="Base_Column_List">
+    c_id,c_sid,c_name,c_sex,c_department,c_major,c_grade,c_class,c_IDCard,c_email,c_photo,c_status
+  </sql>
+  <sql id="Base_Column_Lists">
+        c_id,c_sid,c_name,c_sex,c_department,c_major,c_grade,c_class,c_IDCard,c_email,c_photo,c_status,c_reason
+  </sql>
+
+  <!--激活失败审核列表-->
+  <select id="findAcvationFailList" resultMap="BaseResultMap">
+     select
+     <include refid="Base_Column_List"/>
+    from t_check
+  </select>
+
+  <!--激活失败申请审核的详情信息-->
+  <select id="findAcvationFailInfo" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_Lists"/>
+    from t_check
+    where c_id = #{cId}
+  </select>
+
+  <!--通过激活失败信息的审核-->
+  <update id="updatePassAcvaFailInfo" parameterType="java.lang.Long">
+    update t_check set c_status = '审核通过' where c_id = #{cId}
+  </update>
+
+  <!--不通过激活失败审核-->
+  <update id="updateRefuseAcvaFailInfo">
+    update t_check set c_status = '审核不通过',c_reason = #{cReason} where c_id = #{cId}
+  </update>
+
+  <!--激活失败信息的未审核列表-->
+  <select id="findUnreviewedAcvaFailList" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from t_check where c_status = '未审核'
+  </select>
+
+  <!--激活失败信息的已审核列表-->
+  <select id="findReviewedAcvaFailList" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from t_check where c_status != '未审核'
+  </select>
+
+  <!--提交申请-->
+  <insert id="insertTCheck">
+    insert into t_check(c_sid,c_name,c_sex,c_department,c_major,c_grade,c_class,c_IDCard,c_email,c_photo,c_status)
+    VALUES (#{cSid},#{cName},#{cSex},#{cDepartment},#{cMajor},#{cGrade},#{cClass},#{cIdcard},#{cEmail},#{cPhoto},#{cStatus})
+  </insert>
+</mapper>

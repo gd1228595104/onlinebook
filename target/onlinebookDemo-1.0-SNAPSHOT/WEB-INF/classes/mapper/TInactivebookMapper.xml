@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.TInactivebookMapper" >
+  <resultMap id="BaseResultMap" type="bean.TInactivebook" >
+  <id column="bookid" property="bookid" jdbcType="INTEGER" />
+  <result column="inactivebookname" property="inactivebookname" jdbcType="VARCHAR" />
+  <result column="loaner_id" property="loanerId" jdbcType="BIGINT" />
+  <result column="loaner_name" property="loanerName" jdbcType="VARCHAR" />
+  <result column="status" property="status" jdbcType="VARCHAR" />
+  <result column="photo" property="photo" jdbcType="VARCHAR" />
+</resultMap>
+
+  <sql id="sql_Base_Columns">
+    bookid,inactivebookname,loaner_id,loaner_name,`status`,photo
+  </sql>
+
+  <!--发布闲置书籍-->
+  <insert id="insertTinactivebook" parameterType="bean.TInactivebook">
+    insert into t_inactivebook(bookid,inactivebookname,loaner_id,loaner_name,status,photo)
+    VALUES (#{bookid},#{inactivebookname},#{loanerId},#{loanerName},#{status},#{photo})
+  </insert>
+  
+  <!--发布闲置书籍不清楚分类时的提示功能-->
+  <select id="findBookclass" resultType="java.util.HashMap">
+    select s.classname c1,c.classname c2 from t_book b,t_bookclass c,t_bookclass s
+    where b.bookname like '%${bookname}%'
+    <if test="author!=null">
+       and b.author like '%${author}%'
+    </if>
+    <if test="publisher!=null">
+       and b.publisher like '%${publisher}%'
+    </if>
+    and b.cid = c.cid and s.cid = c.fcid
+  </select>
+
+  <!--查看自己发布的闲置书籍-->
+  <select id="findPublishedInaBook" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    <include refid="sql_Base_Columns"/>
+    from t_inactivebook where loaner_id = #{loanerId}
+  </select>
+
+  <!--将书籍状态修改为待借-->
+  <update id="updateBookStatusForWait" parameterType="java.lang.Integer">
+    update t_inactivebook set `status` = '待借' where bookid = #{bookid}
+  </update>
+
+  <!--将书籍状态修改为已借-->
+  <update id="updateBookStatusLended" parameterType="java.lang.Integer">
+    update t_inactivebook set `status` = '已借' where bookid = #{bookid}
+  </update>
+
+  <!--将书籍状态修改为可借-->
+  <update id="updateBookStatusCanLend" parameterType="java.lang.Integer">
+    update t_inactivebook set `status` = '可借' where bookid = #{bookid}
+  </update>
+  
+  <!--根据书名模糊查询书籍-->
+  <select id="findTInactivebook" resultMap="BaseResultMap">
+    select 
+    <include refid="sql_Base_Columns"/>
+    from t_inactivebook
+    where LOCATE(#{context},inactivebookname)>0
+  </select>
+</mapper>

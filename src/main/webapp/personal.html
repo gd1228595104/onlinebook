@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人中心</title>
+	<link rel="stylesheet" type="text/css" href="css/message.css">
+    <link rel="stylesheet" type="text/css" href="css/personal.css">
+    <link rel="stylesheet" href="layui/css/layui.css" media="all">
+    <script src="layui/layui.js"></script>
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/personal.js"></script>
+    <script type="text/javascript" src="js/personal-tab.js"></script>
+    <script type="text/javascript" src="js/util/personal.js"></script>
+    <script type="text/javascript" src="lay/loadEvalueTable.js"></script>
+</head>
+<body>
+	<!-- nav部分开始 -->
+    <div class="site-nav">
+    	<div class="w">
+    		<div class="fl">
+                <a href="index.html">返回首页</a>
+                <a href="release.html">发布书籍</a>
+            </div>
+    		<div class="fr">
+    			<ul>
+    				<li class="people">
+                        <span></span>
+                        <a href="personal.html">个人中心</a>
+                    </li>
+    				<li class="shu"></li>
+    				<li><a href="login.html">登录</a></li>
+    				<li class="shu"></li>
+    				<li><a href="register-one.html">注册</a></li>
+    				<li class="car">
+                        <a href="javascript:void(0)">
+                            <span></span>
+                            <i class="car-mag">1</i>
+                        </a>
+                    </li>
+    			</ul>
+    		</div>
+    	</div>
+    </div>
+    <!-- nav部分结束 -->
+
+    <!-- search部分开始 -->
+    <div class="search">
+        <div class="w">
+            <div class="search-logo fl">
+                <div class="search-logo1"></div>
+                <div class="search-logo2"></div>
+            </div>
+            <div class="search-book">
+                <div class="search-bookname">
+                    <a href="javascript:void(0)">书名
+                        <i><s>◇</s></i>
+                    </a>
+                </div>
+                <div class="search-more" style="display: none;">
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">小王子</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">活着</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">围城</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">百年孤独</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">我不</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">三体</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">摄影艺术</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">追风筝的人</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                </div>
+            </div>
+            <div class="search-input">
+                <input type="text" value="请输入图书关键字" onfocus="if (value =='请输入图书关键字'){value =''}" onblur="if (value ==''){value='请输入图书关键字'}" />
+                <button>搜索</button>
+                </div>
+            <button class="search-publish" style="visibility: hidden;">发布</button>
+            <!-- <button class="search-call">联系管理员</button> -->
+            <div class="search-Alinkmore ">
+                <a href="javascript:void(0)" class="blue-red">热门搜索：</a>
+                <a href="javascript:void(0)">摆渡人</a>
+                <a href="javascript:void(0)">小王子</a>
+                <a href="javascript:void(0)">挪威的森林</a>
+                <a href="javascript:void(0)">扶摇皇后</a>
+            </div>
+        </div>
+    </div>
+    <!-- search部分结束 -->
+
+    <!-- main部分开始 -->
+    <div class="clearfix"></div>
+    <div class="w">
+        <div class="personal-main-left fl">
+            <img id="img" src="images/manager.png" >
+            <div class="personal-name" id="loginUser">未登录</div>
+            <ul class="personal-borrow-message">
+                <li class="p-message click ">
+                    <i class="">0</i>
+                    <a href="javascript:void(0)">借阅</a>
+                </li>
+                <li class="shu"></li>
+                <li class="p-message click">
+                    <i class="">0</i>
+                    <a href="javascript:void(0)">借出</a>
+                </li>
+                <li class="shu"></li>
+                <li class="p-message click">
+                    <i class="">0</i>
+                    <a href="javascript:void(0)">发布</a>
+                </li>
+            </ul>
+            <hr>
+            <ul class="personal-center">
+                <li class="personal-center-current click">
+                    <span><img src="images/personal-message.png"></span><a href="javascript:void(0)">我的信息</a>
+                </li>
+                <li class="click">
+                    <span><img src="images/Change Password.png"></span><a href="javascript:void(0)">修改密码</a>
+                </li>
+                <li class="click">
+                    <span><img src="images/personal- identification.png"></span><a href="javascript:void(0)">我的认证</a>
+                </li>
+                <li class="click">
+                    <span><img src="images/My Collection.png"></span><a href="javascript:void(0)">我的收藏</a>
+                </li>
+                <li class="click">
+                    <span><img src="images/My evaluation.png"></span><a href="javascript:void(0)">我的评价</a>
+                </li>
+                <li class="click">
+                    <span><img src="images/pulshBook.png"></span><a href="release.html">发布书籍</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 借入div部分开始 -->
+        <div class="fl personal-main-right personal-hide personal-aaa">
+            <p class="personal-title">个人中心</p>
+            <p class="aaa-timebook publish-books publish-current" id="borrowed1">借入的书籍</p>
+            <p class="aaa-hopebook publish-books" id="borrow1">待借入的书籍</p>
+            <hr>
+            <div class="tb">
+            <table id="borrowed" lay-filter="borrowFilter">
+            </table>
+            </div>
+<script type="text/html" id="updateH">
+    <a class="layui-btn layui-btn-xs" style="background-color: #3B9DD8" lay-event="update">还书</a>
+</script>
+            <!--<div class="hide" id="pa-alter">-->
+                <!--<p>修改借书时间</p>-->
+                <!--<form>-->
+                <!--<label>归还时间：</label><input type="date" name=""><br>-->
+                <!--<label>借书状态：</label><select>-->
+                    <!--<option>已还</option>-->
+                    <!--<option>未还</option>-->
+                <!--</select><br>-->
+                <!--<button type="button" class="cacel" id="pa-off">取消</button>-->
+                <!--<button id="pa-yes">确定</button>-->
+                <!--</form>-->
+            <!--</div>-->
+            <div class="tb hide">
+               <table id="borrow" lay-filter="borrowFilter2">
+               </table>
+            </div>
+            <script type="text/html" id="updateB">
+                <a class="layui-btn layui-btn-xs" style="background-color: #3B9DD8" lay-event="update">确认借入</a>
+            </script>
+        </div>
+        <!-- 借入div部分结束 -->
+
+        <!-- 借出div部分开始 -->
+        <div class="fl personal-main-right personal-hide personal-aaa">
+            <p class="personal-title">个人中心</p>
+            <p class="aaa-timebook publish-books publish-current" id="lended1">借出的书籍</p>
+            <p class="aaa-timebook publish-books" id="lend1">待借出的书籍</p>
+            <hr>
+            <div class="tb">
+                <table id="lended" lay-filter="lendedFilter"></table>
+            </div>
+<script type="text/html" id="update">
+    <a class="layui-btn layui-btn-xs" style="background-color: #3B9DD8" lay-event="update1">确认还书</a>
+    <a class="layui-btn layui-btn-xs" style="background-color: #3B9DD8" lay-event="update">修改时间</a>
+</script>
+
+            <div class="tb b-hide">
+                <table id="lend" lay-filter="lendFilter"></table>
+            </div>
+        </div>
+<script type="text/html" id="lendUpdate">
+    <a class="layui-btn layui-btn-xs" style="background-color: #3B9DD8" lay-event="agree">同意</a>
+    <a class="layui-btn layui-btn-xs" style="background-color: #3B9DD8" lay-event="disagree">不同意</a>
+</script>
+        <!-- 借出div部分结束 -->
+
+        <!-- 发布闲置书籍部分开始 -->
+        <div class="fl personal-main-right personal-hide personal-aaa">
+            <p class="personal-title">个人中心</p>
+            <p class="aaa-timebook publish-books publish-current" id="timebook">闲置书籍</p>
+            <p class="aaa-hopebook publish-books" id="hope">希望书籍</p>
+            <hr>
+            <div class="tb">
+                <table id="time" lay-filter="Invfilter"></table>
+            </div>
+<script type="text/html" id="delete">
+    <a class="layui-btn layui-btn-xs" style="background-color: #3B9DD8" lay-event="delete">删除</a>
+</script>
+            <!-- 发布希望书籍开始 -->
+            <div class="tb b-hide">
+            <table id="hope1" lay-filter="hope1filter"></table>
+            </div>
+<script type="text/html" id="delete2">
+    <a class="layui-btn layui-btn-xs" style="background-color: #3B9DD8" lay-event="delete">删除</a>
+</script>
+            <!-- 发布希望书籍结束 -->
+        </div>
+        <!-- 发布闲置书籍部分结束 -->
+        
+        <!-- 我的信息部分开始 -->
+        <div class="personal-main-right fl show personal-hide">
+            <p class="personal-title">个人中心</p>
+            <p class="personal-mymsg">我的信息</p>
+            <hr>
+            <form>
+            <label> &nbsp &nbsp &nbsp &nbsp学号：</label><input type="text" value="未登录" name="" id="stu_id"><br>
+            <label> &nbsp &nbsp &nbsp &nbsp性别：</label><input type="radio" name="sex"  checked="checked"  value="男">男<input type="radio" name="sex"  value="女">女<br>
+            <label>手机绑定：</label><input type="text" value="未绑定电话"  disabled="true" id="phone"><a class="alter">修改</a><br>
+            <label>电子邮箱：</label><input type="text" value="未绑定邮箱"  disabled="true" id="email"><a class="alter">修改</a><br>
+            <label>学号绑定：</label><input type="text" value="未登录" name="" disabled="true" id="Id_number"><br>
+            <label>院系名称：</label><input type="text" value="未登录" name="" disabled="true" id="department"><br>
+            <label>专业班级：</label><input type="text" value="未登录" name="" disabled="true" id="grade"><br>
+            <label>兴趣标签：</label><input type="text" value="文学    文化    科技"  disabled="true" id="hobby"><a class="alter">修改</a><br>
+            <label>真实姓名：</label><input type="text" value="未登录" name="" disabled="true" id="stu_name"><br>
+            </form>
+            <button>保存资料</button>
+        </div>
+        <!-- 我的信息部分结束 -->
+
+        <!-- 修改密码部分开始 -->
+        <div class="fl personal-main-right personal-hide personal-ii">
+            <p class="personal-title">个人中心</p>
+            <p class="personal-mymsg">修改密码</p>
+            <hr>
+            <form>
+                <label>&nbsp &nbsp用户名：</label><label id="stu_idLabel"></label> <br>
+                <label>&nbsp &nbsp原密码：</label><input type="password" id="old_pwd" placeholder="请输入原密码" onblur="check()">
+                <label id="msg1" style="display: none; color: #00FF00">✔</label>
+                <label id="msg2" style="display: none; color: #ac2925">✖</label>
+                <br>
+                <label>&nbsp &nbsp新密码：</label><input type="password" id="new_pwd" placeholder=""><br>
+                <label>确认密码：</label><input type="password" id="new_pwd2" placeholder="请再次输入密码" onblur="check2()">
+                <label id="msg3" style="display: none;color: #00FF00">✔</label>
+                <label id="msg4" style="display: none; color: #ac2925">✖</label>
+            </form>
+            <button type="button" id="submit_but">提交</button>
+        </div>
+        <!-- 修改密码部分结束 -->
+
+        <!-- 我的认证部分开始 -->
+        <div class="fl personal-main-right personal-hide personal-iii">
+            <p class="personal-title">个人中心</p>
+            <p class="personal-mymsg">我的认证</p>
+            <hr>
+            <div class="binding">
+                <img src="images/personal-no.png" class="fl">
+                <p class="fl">
+                    <span class="iii-title">学号</span><br>
+                    <span>通过与学号连接，您可以使用学号直接登录友书网。您已绑定了160345****学号
+                    </span>
+                </p>
+                <button class="fr iii-btn">解除绑定</button>
+            </div>
+            <div class="clearfix"></div>
+            <div class="binding">
+                <img src="images/personal-tel.png" class="fl">
+                <p class="fl">
+                    <span class="iii-title">&nbsp &nbsp手机号</span><br>
+                    <span>
+                        &nbsp &nbsp &nbsp通过与手机号连接，您可以使用手机号找回密码。
+                    </span>
+                </p>
+                <button class="fr">解除绑定</button>
+            </div>
+            <div class="clearfix"></div>
+            <div class="binding">
+                <img src="images/personal-email.png" class="fl">
+                <p class="fl">
+                    <span class="iii-title">邮箱</span><br>
+                    <span>
+                        通过与邮箱连接，您可以使用邮箱直接接收友书网的相关信息。
+                    </span>
+                </p>
+                <button class="fr">解除绑定</button>
+            </div>
+        </div>
+        <!-- 我的认证部分结束 -->
+
+        <!-- 我的收藏部分开始 -->
+        <div class="fl personal-main-right personal-hide personal-iiii">
+            <p class="personal-title">个人中心</p>
+            <p class="personal-mymsg">我的收藏</p>
+            <hr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>书名</th>
+                        <th>更新时间</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody id="iiii-tbd">
+                    <tr>
+                        <td>
+                        <input type="checkbox" />闲置书籍
+                        </td>
+                        <td>2019-01-12  12:13</td>
+                        <td class="iiii-delete">删除</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="checkbox" />闲置书籍
+                        </td>
+                        <td>2019-01-12  12:13</td>
+                        <td class="iiii-delete">删除</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="checkbox" />闲置书籍
+                        </td>
+                        <td>2019-01-12  12:13</td>
+                        <td class="iiii-delete">删除</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="checkbox" />闲置书籍
+                        </td>
+                        <td>2019-01-12  12:13</td>
+                        <td class="iiii-delete">删除</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="checkbox" />闲置书籍
+                        </td>
+                        <td>2019-01-12  12:13</td>
+                        <td class="iiii-delete">删除</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="checkbox" />闲置书籍
+                        </td>
+                        <td>2019-01-12  12:13</td>
+                        <td class="iiii-delete">删除</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="checkbox" />闲置书籍
+                        </td>
+                        <td>2019-01-12  12:13</td>
+                        <td class="iiii-delete">删除</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="checkbox" />闲置书籍
+                        </td>
+                        <td>2019-01-12  12:13</td>
+                        <td class="iiii-delete">删除</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="checkbox" />闲置书籍
+                        </td>
+                        <td>2019-01-12  12:13</td>
+                        <td class="iiii-delete">删除</td>
+                    </tr>
+                </tbody>
+            </table>
+            <span><input type="checkbox" id="iiii-allselect" />全选</span>
+            <button id="iiii-delete">删除</button>
+            <button class="fr pag">下一页</button>
+            <button class="fr pag">上一页</button>
+        </div>
+        <!-- 我的收藏部分结束 -->
+
+        <!-- 发表评论部分开始 -->
+        <div class="fl personal-main-right personal-hide personal-iiiii">
+            <p class="personal-title">个人中心</p>
+            <p class="iiiii-sendevaluate evaluate evaluate-current">发表评价</p>
+            <p class="iiiii-evaluate evaluate">他人评价</p>
+            <hr>
+            <!-- 发表评论部分开始 -->
+            <div class="iiiii-div">
+                <table id="evaTable2" lay-filter="test2"></table>
+                <script type="text/html" id="control">
+                    <a class="layui-btn layui-btn-xs" style="background-color: #3B9DD8;color: #FFFFFF;" lay-event="update">保存</a>
+                    <a class="layui-btn layui-btn-xs" style="background-color: #3B9DD8;color: #FFFFFF" lay-event="delete">删除</a>
+                </script>
+            </div>
+            <!-- 发表评论部分结束 -->
+
+            <!-- 他人评论部分开始 -->
+            <div class="iiiii-div div-hide">
+                <table id="evaTable" lay_filter="test"></table>
+            <!--<table>-->
+                <!--<thead>-->
+                    <!--<tr>-->
+                        <!--<th>用户名</th>-->
+                        <!--<th>学号</th>-->
+                        <!--<th>评价内容</th>-->
+                        <!--<th>操作</th>-->
+                    <!--</tr>-->
+                <!--</thead>-->
+                <!--<tbody id="iiiii-btbd">-->
+                    <!--<tr>-->
+                        <!--<td>-->
+                        <!--<input type="checkbox" />友书友书-->
+                        <!--</td>-->
+                        <!--<td>12345678901</td>-->
+                        <!--<td>非常好</td>-->
+                        <!--<td class="iiiii-bdelete"><a href="javascript:;">查看</a><a href="javascript:;">删除</a></td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>-->
+                        <!--<input type="checkbox" />友书友书-->
+                        <!--</td>-->
+                        <!--<td>12345678901</td>-->
+                        <!--<td>非常好</td>-->
+                        <!--<td class="iiiii-bdelete"><a href="javascript:;">查看</a><a href="javascript:;">删除</a></td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>-->
+                        <!--<input type="checkbox" />友书友书-->
+                        <!--</td>-->
+                        <!--<td>12345678901</td>-->
+                        <!--<td>非常好</td>-->
+                        <!--<td class="iiiii-bdelete"><a href="javascript:;">查看</a><a href="javascript:;">删除</a></td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>-->
+                        <!--<input type="checkbox" />友书友书-->
+                        <!--</td>-->
+                        <!--<td>12345678901</td>-->
+                        <!--<td>非常好</td>-->
+                        <!--<td class="iiiii-bdelete"><a href="javascript:;">查看</a><a href="javascript:;">删除</a></td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>-->
+                        <!--<input type="checkbox" />友书友书-->
+                        <!--</td>-->
+                        <!--<td>12345678901</td>-->
+                        <!--<td>非常好</td>-->
+                        <!--<td class="iiiii-bdelete"><a href="javascript:;">查看</a><a href="javascript:;">删除</a></td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>-->
+                        <!--<input type="checkbox" />友书友书-->
+                        <!--</td>-->
+                        <!--<td>12345678901</td>-->
+                        <!--<td>非常好</td>-->
+                        <!--<td class="iiiii-bdelete"><a href="javascript:;">查看</a><a href="javascript:;">删除</a></td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>-->
+                        <!--<input type="checkbox" />友书友书-->
+                        <!--</td>-->
+                        <!--<td>12345678901</td>-->
+                        <!--<td>非常好</td>-->
+                        <!--<td class="iiiii-bdelete"><a href="javascript:;">查看</a><a href="javascript:;">删除</a></td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>-->
+                        <!--<input type="checkbox" />友书友书-->
+                        <!--</td>-->
+                        <!--<td>12345678901</td>-->
+                        <!--<td>非常好</td>-->
+                        <!--<td class="iiiii-bdelete"><a href="javascript:;">查看</a><a href="javascript:;">删除</a></td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>-->
+                        <!--<input type="checkbox" />友书友书-->
+                        <!--</td>-->
+                        <!--<td>12345678901</td>-->
+                        <!--<td>非常好</td>-->
+                        <!--<td class="iiiii-bdelete"><a href="javascript:;">查看</a><a href="javascript:;">删除</a></td>-->
+                    <!--</tr>-->
+                <!--</tbody>-->
+            <!--</table>-->
+            <!--<span><input type="checkbox" id="iiiii-ballselect" />全选</span>-->
+            <!--<button id="iiiii-bdelete">删除</button>-->
+            <!--<button class="fr pag">下一页</button>-->
+            <!--<button class="fr pag">上一页</button>-->
+            </div>
+            <!-- 他人评论部分结束 -->
+        </div>
+        <!-- 发表评论部分开始 -->
+        
+        
+        
+    </div>
+    <!-- main部分结束 -->
+    <!-- footer部分开始 -->
+    <div class="clearfix"></div>
+    <div class="footer-box">
+    <div class="footer-bottom w">
+        <div class="footer-bottom-links">
+            <a href="javascript:void(0)">网站首页</a>|
+            <a href="javascript:void(0)">网站简介</a>|
+            <a href="javascript:void(0)">图书排行榜</a>|
+            <a href="javascript:void(0)">联系管理员</a>|
+            <a href="javascript:void(0)">意见反馈</a>|
+            <a href="javascript:void(0)">联系我们</a>|
+            <a href="javascript:void(0)">免费注册</a>|
+            <a href="javascript:void(0)">常见问题</a>
+        </div>
+        <div class="footer-bottom-copyright">
+            <p>版权归友书借书网所有</p>
+            <p>地址：广东省茂名市茂南区官渡二路广东石油化工学院</p>
+            <p>邮箱：123456789@qq.com</p>
+            <p>电话：17819185555</p>
+        </div>
+    </div>
+    </div>
+    <!-- footer部分结束 -->
+</body>
+</html>

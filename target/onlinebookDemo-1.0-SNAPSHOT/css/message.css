@@ -1,0 +1,597 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button { 			/*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;				/*清除列表风格*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;			/*合并外边线*/
+}
+
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";	/*宋体，Unicode，统一码*/
+    color: #666;
+    background: #fff
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #418BCB;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.blue-red {
+    color: #418BCB !important;
+}
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+/*nav开始*/
+    .site-nav {
+        height: 33px;
+        background: #E3E2E2;
+        line-height: 33px;
+        font: 400 12px/33px "microsoft yahei";
+    }
+    
+    .site-nav li{
+        float: left;
+        position: relative;
+        padding: 0 10px;
+    }
+    .site-nav li.shu{
+        width: 2px;
+        height: 15px;
+        background: #454749;
+        padding: 0px;
+        margin-top: 9px;
+    }
+    .people span   {
+        position: absolute;
+        top: 5px;
+        right: 66px;
+        width: 17px;
+        height: 18px;
+        background: url("../images/people.png") no-repeat;
+    }
+    .car a   {
+        display: inline-block;
+        width: 19px;
+        height: 20px;
+        
+    }
+    .car span   {
+        position: absolute;
+        top: 5px;
+        width: 19px;
+        height: 20px;
+        background: url("../images/car.png") no-repeat;
+    }
+    .car-mag{
+        
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 7px 7px 7px 0;
+        top: 1px;
+        right: -7px;
+        background: #418BCB;
+        color: #fff;
+        line-height: 15px;
+        text-align: center;
+    }
+    /*nav结束*/
+
+    
+
+    /*search开始*/
+    .search-logo {
+        padding: 22px 115px 2px 21px;
+        float: left;
+    }
+    .search-logo1 {
+        width: 85px;
+        height: 48px;
+        background: url(../images/logo1.png) no-repeat;
+        float: left;
+    }
+    .search-logo2 {
+        width: 80px;
+        height: 14px;
+        margin-top: 19px;
+        background: url(../images/logo2.png) no-repeat;
+        float: left;
+    }
+    .search-book .search-bookname {
+        float: left;
+        position: relative;
+        height: 37px;
+        width: 73px;
+        margin-top: 23px;
+        border: 1px solid #438CCB;
+    }
+    .search-book a{
+       font: 400 14px/37px "MicrosoftYaHei";
+       padding-left: 11px;
+       color: #5D5D5D;
+    }
+    .search-book i{
+       position: absolute;
+       top: 17px;
+       right: 8px;
+       width: 15px;
+       height: 7px;
+       overflow: hidden;
+       font: 400 14px/15px "MicrosoftYaHei";
+    } 
+    .search-book s{
+       position: absolute;
+       top: -8px;
+    }
+
+    .search-input {
+        float: left;
+        
+    }
+    .search-input input {
+        padding-left:5px;
+        margin-top: 23px;
+        float: left;
+        color: #cccccc;
+        width: 328px;
+        height: 37px;
+        border: 1px solid #438CCB;
+        border-right:0;
+        border-left:0;
+    }
+    .search-input button{
+        float: left;
+        height: 39px;
+        width: 74px;
+        margin-top: 23px;
+        background-color: #3784C7;
+        color: #fff;
+        font-weight:bold;
+        font: 400 18px/37px "microsoft yahei";
+        cursor: pointer;
+    }
+
+    .search-publish{
+        float: left;
+        height: 39px;
+        width: 94px;
+        margin-top: 23px;
+        margin-left: 82px;
+        background-color: #DE6A32;
+        color: #fff;
+        font-weight:bold;
+        font: 400 18px/37px "microsoft yahei";
+        cursor: pointer;
+    }
+    .search-call{
+        float: left;
+        height: 39px;
+        width: 100px;
+        margin-top: 23px;
+        margin-left: 34px;
+        background-color: #57AFFB;
+        color: #fff;
+        font-weight:bold;
+        font: 400 18px/37px "microsoft yahei";
+        cursor: pointer;
+    }
+    
+    .search-Alinkmore {
+        float: left;
+        margin-top: 4px;
+        width: 306px;
+        height: 13px;
+    }
+    .search-Alinkmore a{
+        float: left;
+        margin-right: 5px;
+        font: 400 14px/13px "microsoft yahei";
+        color: #A5A4A4;
+    }
+    /*search结束*/
+
+    /*main部分开始*/
+    .main-left .top{
+        position: relative;
+        width: 800px;
+        height: 299px;
+        margin-top: 32px;
+        border: 1px solid #D2D2D2;
+    }
+    .main-left .bottom{
+        width: 800px;
+        height: 638px;
+        margin-top: 16px;
+        border: 1px solid #D2D2D2;
+    }
+    .main-right .borrow-message{
+        width: 374px;
+        height: 456px;
+        margin-top: 32px;
+        border: 1px solid #D2D2D2;
+    }
+    .main-right .more{
+        width: 374px;
+        height: 483px;
+        margin-top: 14px;
+        border: 1px solid #D2D2D2;
+    }
+    .top .image{
+        float: left;
+        width: 184px;
+        height: 250px;
+        position: relative;
+        border: 1px solid #D2D2D2;
+        margin-top: 20px;
+        margin-left: 24px;
+        
+    }
+    .top .image img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+
+    }
+    .top .introdute{
+        float: left;
+        width: 184px;
+        height: 250px;
+        /*border: 1px solid #D2D2D2;*/
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .introdute .book-name{
+        font: 400 24px/38px "microsoft yahei";
+        color: #418BCB;
+        padding-top: 4px;
+
+    }
+    .introdute p{
+        font: 400 16px/28px "microsoft yahei";
+        color: #818080;
+    }
+    .introdute .save{
+        width: 72px;
+        height: 34px;
+        border-radius: 8px;
+        background-color: #D2D2D2;
+        color: #B4B4B4;
+    }
+
+    .introdute .xin{
+        font-size: 20px;
+        color: #ff3100;
+
+    }
+    .introdute .applybook{
+        width: 100px;
+        height: 35px;
+        background-color: #57AFFB;
+        color: #FFFFFF;
+        margin-top: 10px;
+    }
+    /*弹出框部分开始*/
+    .top #borrower-message{
+        float: right;
+        width: 200px;
+        height: 200px;
+        margin-left: 92px;
+        margin-top: 52px;
+        background-color: #57AFFB;
+        z-index: 1;
+        font:400 18px/32px MicrosoftYaHei;
+        color: #FFFFFF;
+    }
+    .top #borrower-message p{
+        padding-left: 10px;
+    }
+
+    .bottom #evaluate-publisher{
+        float: right;
+        position: absolute;
+        width: 460px;
+        height: 520px;
+        right: 0px;
+        top: 45px;
+        background-color: #E6F1FA;
+        z-index: 1;
+        font:400 18px/32px MicrosoftYaHei;
+        /*color: #FFFFFF;*/
+    }
+    .bottom #evaluate-publisher textarea{
+        width: 400px;
+        height: 390px;
+        margin-left: 30px;
+        margin-top: 30px;
+        border-style: none;
+        font:400 14px/20px MicrosoftYaHei;
+        color: #4F5050;
+
+    }
+    .bottom #evaluate-publisher button{
+        width: 184px;
+        height: 30px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .bottom #evaluate-publisher .submit-content{
+        background-color: #57AFFB;
+        color: #FFFFFF;
+    }
+    /*弹出框部分结束*/
+    .bottom{
+        position: relative;
+    }
+    .bottom-nav .current{
+        color: #FFFFFF;
+        background-color: #3784C7;
+    }
+    .bottom .bottom-nav{
+        font: 400 18px/46px "microsoft yahei";
+        border-bottom: 1px solid #D2D2D2;
+    }
+    .bottom .bottom-nav a{
+        display: inline-block;
+        padding: 0 30px;
+    }
+    /*.bottom .bottom-nav a:hover{
+        color: #FFFFFF;
+        background-color: #3784C7;
+    }*/
+    .bottom .title{
+        background-color: #F3F3F3;
+        
+        font: 400 18px/46px "microsoft yahei";
+        color: #4F5050;
+        padding-left: 30px;
+    }
+    .bottom .content{
+        padding: 30px 30px;
+        font: 400 16px/32px "microsoft yahei";
+        color: #787878;
+        text-indent: 2em;
+    }
+    .bottom  .evaluate-publisher{
+        margin-left: 64px;
+        width: 100px;
+        height: 35px;
+        background-color: #57AFFB;
+        color: #feffff;
+    }
+    .bottom .call-publisher{
+             margin-left: 30px;
+             width: 100px;
+             height: 35px;
+             background-color: #57AFFB;
+             color: #FFFFFF;
+         }
+
+    /*.bottom .comment {
+        font-size: 46px;
+        padding-left: 58px;
+        padding-top: 20px;
+        color: #FFAA80;
+    }
+
+    .bottom .comment li {
+        float: left;
+        cursor: pointer;
+    }
+    .bottom textarea{
+        display: block;
+        width: 690px;
+        height: 165px;
+        border-color:#D2D2D2; 
+        margin-left: 58px;
+        margin-top: 36px;
+        font: 400 16px/24px "microsoft yahei";
+    }
+    .bottom .submit{
+        float: right;
+        border-radius: 8px;
+        cursor: pointer;
+        background-color: #F3F3F3;
+        font: 400 18px/44px "microsoft yahei";
+        color: #787878;
+        width: 128px;
+        height: 44px;
+        margin-top: 10px;
+        margin-right: 46px;
+    }*/
+    .borrow-message table{
+        border-collapse: collapse;
+        background-color: #F4FAFD;
+        
+        /*font-size: 18px;*/
+        font-family: "microsoft yahei";
+    }
+    .borrow-message .borrower-message{
+        cursor: pointer;
+    }
+    .borrow-message table tr{
+        border: 1px solid #c5c5c5; 
+    }
+    
+    .borrow-message table td,.borrow-message table th{
+        padding: 19px 33px
+    }
+    .borrow-message .current{
+        color: #FFFFFF;
+        background-color: #3784C7;
+    }
+    .borrow-message .header{
+        color: #3784C7;
+    }
+
+    .main-right .more{
+        background-color: #F4FAFD;
+    }
+
+    .main-right .more .more-nav{
+        border-bottom: 1px solid #C3C3C3;
+    }
+    .main-right .more a{
+        display: inline-block;
+        padding: 10px 30px;
+    }
+    .main-right .more .current{
+        color: #FFFFFF;
+        background-color: #3784C7;
+    }
+    .main-right .more .second{
+        float: right;
+        padding:10px 4px;
+    }
+    .more .more-box img{
+        padding-left: 20px;
+    }
+    .more .more-box .img-one{
+        padding-bottom: 20px;
+    }
+    .main-right .more .more-box-one{
+        margin:25px 0; 
+        border-bottom: 1px solid #C3C3C3;
+    }
+    .more-box .more-box-second,.more-box .more-box-first{
+        width: 180px;
+        height: 176px;
+        padding-right: 20px;
+        overflow: hidden;
+        color: #7A7A7A;
+        font:400 14px/32px MicrosoftYaHei;
+    }
+    .more-box .more-box-book-name{
+        font:400 18px/18px MicrosoftYaHei;
+        color: #418BCB;
+    }
+    /*main部分结束*/
+
+    /*footer部分开始*/
+    .footer-box {
+        height: 100px;
+        background: #418BCB;
+        margin-top: 50px;
+        color: #FFFFFF;
+        font: 400 16px/50px "microsoft yahei";
+    }
+    .footer-box .footer-bottom-links{
+        
+        text-align: center;
+    }
+    .footer-box .footer-bottom-links a{
+        margin:0 10px;
+        color: #FFFFFF;
+        
+    }
+    .footer-box .footer-bottom-links a:hover{
+        color: #FFFFFF; 
+    }
+    .footer-box .footer-bottom-copyright{
+        text-align: center;
+    }
+    .footer-box .footer-bottom-copyright p{
+        display: inline-block;
+        color: #FFFFFF;
+        margin:0 15px;
+    }
+    /*footer部分结束*/
+

@@ -1,0 +1,179 @@
+/*发布希望书籍开始*/
+.release-main .release-div{
+	width: 900px;
+	height: 630px;
+	/*border: 1px solid blue;*/
+	margin: 30px auto;
+   
+}
+.issue{
+	display: inline-block;
+	width: 448px;
+	height: 30px;
+	background-color: #E5F3FE;
+	color: #3E3E3E;
+	font:400 14px/30px MicrosoftYaHei;
+	text-align: center;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.release-div .issue-current{
+	background-color: #49A8FA;
+	color: #FFFFFF;
+}
+.release-div .issue-details{
+	margin: 30px auto;
+	/*border: 1px solid pink;*/
+}
+.release-div .hope-details{
+	width: 450px;
+}
+.hope-details label,.unuse-details label{
+	color: #3E3E3E;
+	font-size: 16px;
+}
+.hope-details label i,.unuse-details label i{
+	color: #FB0303;
+}
+.release-div .hope-details select,.release-div .unuse-details select{
+	width: 180px;
+	height: 40px;
+	background-color: #E5F3FE;
+	margin-right: 14px;
+
+}
+.release-div .hope-details table,.release-div .unuse-details table{
+	width: 440px;
+	background-color: #E5F3FE;
+	margin-top: 20px;
+	font: 400 14px/14px MicrosoftYaHei;
+	color: #696969;
+	border: 1px solid #E8E7E7;
+}
+.hope-details table td,.hope-details table th,.unuse-details table td,.unuse-details table th{
+	text-align: center;
+	padding:12px;
+}
+.hope-details button{
+	width: 180px;
+	height: 30px;
+	margin-top: 40px;
+	border-radius: 6px;
+	background-color: #E8E7E7;
+	color: #6F6F6F;
+}
+.hope-details .issue-btn{
+    background-color: #49A8FA;
+    color: #FFFFFF;
+    margin-left: 70px;
+}
+/*发布希望书籍结束*/
+.issue-hide{
+	display: none;
+}
+.release-main .show{
+	display: block;
+}
+
+/*发布闲置书籍开始*/
+.file {
+    position: relative;
+    display: inline-block;
+    background: #ccc;
+    vertical-align: -7px;
+    border: 1px solid #DEDEDE;
+    padding: 4px 20px;
+    overflow: hidden;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 10px;
+    border-radius: 20px;
+    color: #333;
+    font-size: 12px;
+
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.gradient{
+   
+    filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#fff,endcolorstr=#ccc,gradientType=0);
+    -ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#fff,endcolorstr=#ccc,gradientType=0);/*IE8*/    
+    background:#ccc; /* 一些不支持背景渐变的浏览器 */  
+    background:-moz-linear-gradient(top, #fff, #ccc);  
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(#ccc));  
+    background:-o-linear-gradient(top, #fff, #ccc); 
+}
+.unuse-details .details-l{
+	width: 470px;
+	/*border:1px solid green;*/
+}
+.unuse-details .details-l label{
+	margin-top: 10px;
+}
+.unuse-details .details-l #preview{
+	margin-left: 60px;
+}
+.unuse-details .details-l select{
+	margin-bottom: 20px;
+}
+.unuse-details .details-l button{
+	width: 140px;
+	height: 40px;
+	border-radius: 8px;
+	background-color: #49A8FA;
+	color: #FFFFFF;
+	margin-top: 14px;
+	margin-left: 300px;
+	font-size: 16px;
+}
+.details-r{
+	margin-right: 80px;
+	margin-top: 30px;
+}
+.details-r .tips{
+	font-size: 14px;
+}
+.details-r .tips i{
+    font-size: 20px;
+    color: #FF0303;
+}
+.details-r form{
+	background-color: #E5F3FE;
+	margin:30px auto;
+	width: 204px;
+	padding:30px;
+}
+.details-r form p{
+	font-size: 16px;
+	color: #3E3E3E;
+}
+.details-r input{
+	border:1px solid #B2B2B2;
+	background-color: #E5F3FE;
+	width: 200px;
+	height: 40px;
+	margin-top: 20px;
+	text-indent: 6px;
+	border-radius: 8px;
+}
+.details-r button{
+	width: 80px;
+	height: 40px;
+	background-color: #DCDCDC;
+	color: #9D9D9D;
+	font-size: 16px;
+	margin-top: 14px;
+	border-radius: 8px;
+	
+}
+.details-r .tips-reset{
+	background-color: #49A8FA;
+	color: #FFFFFF;
+	margin-left: 40px;
+}
+/*发布闲置书籍结束*/

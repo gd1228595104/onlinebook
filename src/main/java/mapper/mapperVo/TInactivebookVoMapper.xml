@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.mapperVo.TInactivebookVoMapper" >
+  <resultMap id="BaseResultMap" type="bean.vo.TInactivebookVo">
+    <id column="bookid" property="bookid" jdbcType="INTEGER" />
+    <result column="inactivebookname" property="inactivebookname" jdbcType="VARCHAR" />
+    <result column="loaner_id" property="loanerId" jdbcType="BIGINT" />
+    <result column="loaner_name" property="loanerName" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="VARCHAR" />
+    <result column="photo" property="photo" jdbcType="VARCHAR" />
+    <result column="author" property="author" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <!--根据书名查作者-->
+  <select id="findBookByAuthor" resultMap="BaseResultMap">
+    select DISTINCT i.*,b.author  from t_inactivebook i,t_book b
+    where i.inactivebookname = b.bookname
+    and LOCATE(#{author},b.author)
+  </select>
+
+  <!--查询书籍的各项详细信息-->
+  <select id="findInaBookInfo" resultType="bean.vo.TinaBookClassVo">
+    select i.bookid,i.inactivebookname,i.loaner_id loanerId,i.loaner_name loanerName,
+ s.department,s.major,s.grade,s.classnumber,s.phone,
+ i.`status`,i.photo,GROUP_CONCAT(DISTINCT(b.classname)) classname,k.author,k.publisher
+ from t_inactivebook i,t_book k,t_student s,t_bookclass b
+where i.bookid=#{bookid} and b.cid = k.cid and i.inactivebookname = k.bookname and i.loaner_id = s.sid
+  </select>
+
+  <!--首页显示所有书籍-->
+  <select id="findAllInaBook" resultMap="BaseResultMap">
+    select i.*,b.author from t_inactivebook i,t_book b
+    where i.inactivebookname = b.bookname GROUP BY i.bookid
+  </select>
+</mapper>

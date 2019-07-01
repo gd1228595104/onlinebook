@@ -1,0 +1,388 @@
+body,
+html,
+.manage,.aside {
+    height: 100%;
+}
+.manage {
+    overflow: hidden;
+}
+.aside {
+    /*width: 280px;*/
+    width: 18%;
+    height: 100%;
+    background: #5C9EFF;
+
+}
+.aside button{
+    position: absolute;
+    bottom: 22px;
+    left: 76px;
+    border-radius: 24px;
+    width: 100px;
+    height: 36px;
+    color: #222222;
+    font: 400 16px/16px  "Adobe Heiti Std R";
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+.aside .navs {
+    width: 100%;
+    padding: 20px 0;
+}
+.aside .navs .second{
+    font: 400 16px/16px "Adobe Heiti Std R";
+}
+.aside .navs li{
+    margin-left: 46px;
+}
+.aside .navs span{
+    display: block;
+    margin-left: 46px;
+    font: 400 28px/27px "Adobe Heiti Std R";
+    padding-bottom: 26px; 
+    color: #F6F6F6;
+}
+.aside .navs li a+ul {
+    display: none;
+    overflow: hidden;
+}
+
+.aside .navs a {
+    width: 100%;
+    line-height: 1;
+    padding: 12px 20px;
+    margin: 4px 0;
+    color: #F6F6F6;
+    display: block;
+}
+
+.aside .navs a:hover {
+    color: #FECE5C;
+    text-decoration: none;
+}
+
+.aside .navs a+ul a {
+    padding-left: 2px;
+}
+
+.aside .navs .active {
+    color: #FECE5C;
+    
+}
+
+.aside .navs i {
+    margin-left: 8px;
+    vertical-align: middle;
+    font: 400 20px/19px "Adobe Heiti Std R";
+}
+
+/*.main .search input{
+    width: 270px;
+    height: 40px;
+    border-radius: 10px 0 0 10px;
+    background-color: #F2F2F2;
+}
+.main .search button{
+    width: 90px;
+    height: 40px;
+    color: #FFFFFF;
+    font: 400 16px/16px MicrosoftYaHei;
+    border-radius: 0 10px 10px 0;
+    vertical-align: middle;
+    background-color: #5C9EFF;
+}*/
+.main{
+    width: 82%;
+    height: 100%;
+}
+.main .header{
+    height: 66px;
+}
+.main .header .title{
+    color: #4D4D4D;
+    margin-left: 28px;
+    font: 400 16px/16px "MicrosoftYaHei";
+}
+.main .title p{
+    line-height: 66px;
+}
+.main .user{
+    position: relative;
+    
+
+}
+.main .user a{
+    display: block;
+    margin-right: 100px;
+    cursor: pointer;
+    color: #5C9EFF;
+    font: 400 18px/66px MicrosoftYaHei;
+}
+.main .user i{
+    position: absolute;
+    top: 32px;
+    right: 80px;
+    width: 15px;
+    height: 7px;
+    overflow: hidden;
+    font: 400 14px/15px "MicrosoftYaHei";
+}
+.main .user s{
+    position: absolute;
+    top: -7px;
+}
+.main .refresh{
+    cursor: pointer;
+    font: 400 18px/66px MicrosoftYaHei;
+    color: #5F5F5F;
+    margin-right: 80px;
+}
+.main #detail{
+    position: fixed;
+    top: 90px;
+    left: 665px;
+    width: 300px;
+    height: 500px;
+    background-color: #E6F1FA;
+    z-index: 1;
+    
+}
+.main #detail .close-detail{
+    font-size: 32px;
+    cursor: pointer;
+    padding: 6px 6px;
+}
+#detail .inside{
+    background-color: #E6F1FA;
+    width: 210px;
+    margin-top: 30px;
+    margin-left: 44px;
+}
+#detail .inside h2{
+    text-align: center;
+    font-size: 18px;
+}
+#detail .inside p{
+    font-size: 16px;
+    padding-top: 10px;
+    color: #3E3E3E;
+}
+
+/*激活失败管理页面部分开始*/
+.activate-content{
+    background-color: #ECF5FA;
+    height: 100%;
+
+}
+.activate-content table{
+    font-size: 16px;
+    table-layout: fixed;
+    text-align: center;
+}
+.activate-content .xiangqing{
+    cursor: pointer;
+}
+.activate-content table td,.activate-content table th{
+    width: 206px;
+    padding: 5px 0;
+}
+.activate-content thead{
+    background-color: #5C9EFF;
+    color: #FFFFFF;
+}
+.activate-content  th{
+
+    border-left: 1px solid #E3E2E2;
+}
+.activate-content .button{
+    margin-left: 400px;
+    margin-top: 20px;
+}
+.activate-content button{
+    width: 80px;
+    height: 36px;
+    margin-right: 16px;
+    background-color: #FFFFFF;
+    color: #5F5F5F;
+    cursor: pointer;
+}
+/*激活失败页面部分结束*/
+
+/*其他问题页面部分开始*/
+.problem-content{
+    background-color: #ECF5FA;
+    height: 100%;
+} 
+.problem-content table{
+    font-size: 16px;
+    table-layout: fixed;
+    text-align: center;
+}
+.problem-content table td,.problem-content table th{
+    width: 280px;
+    padding: 4px 0;
+}
+.problem-content th{
+    border-left: 1px solid #E3E2E2;
+}
+.problem-content thead{
+    background-color: #5C9EFF;
+    color: #FFFFFF;
+}
+.problem-content .button{
+    margin-left: 400px;
+    margin-top: 20px;
+}
+.problem-content button{
+    width: 80px;
+    height: 36px;
+    margin-right: 16px;
+    background-color: #FFFFFF;
+    color: #5F5F5F;
+    cursor: pointer;
+}
+/*其他问题页面部分结束*/
+
+/*发布公告页面部分开始*/
+.publish-notice{
+    background-color: #ECF5FA;
+    width: 100%;
+    height: 100%;
+} 
+.notice-container{
+    text-align: center;
+    margin-top: 100px;
+}
+.notice-container .notice-title{
+    width: 400px;
+    height: 20px;
+    border-style: none;
+    vertical-align: top;
+}
+.notice-container .notice-content{
+    width: 400px;
+    height: 250px;
+    border-style: none;
+    vertical-align: top;
+}
+.notice-container #content{
+    margin-top: 12px;
+}
+.notice-container .sure-publish{
+    width: 404px;
+    height: 40px;
+    margin-left: 60px;
+    margin-top: 12px;
+    background-color: #5C9EFF;
+    color: #FFFFFF;
+}
+/*发布公告页面部分结束*/
+
+/*查看公告页面部分开始*/
+.check-content{
+    background-color: #ECF5FA;
+    height: 100%;
+} 
+.check-content table{
+    font-size: 16px;
+    table-layout: fixed;
+    text-align: center;
+}
+.check-content table td,.check-content table th{
+    width: 280px;
+    padding: 4px 0;
+}
+.check-content th{
+    border-left: 1px solid #E3E2E2;
+}
+.check-content thead{
+    background-color: #5C9EFF;
+    color: #FFFFFF;
+}
+.check-content .button{
+    margin-left: 400px;
+    margin-top: 20px;
+}
+.check-content button{
+    width: 80px;
+    height: 36px;
+    margin-right: 16px;
+    background-color: #FFFFFF;
+    color: #5F5F5F;
+    cursor: pointer;
+}
+.check-content .delete{
+    cursor: pointer;
+}
+/*查看公告页面部分结束*/
+
+/*查看用户页面部分开始*/
+.user-content{
+    background-color: #ECF5FA;
+    width: 100%;
+    height: 100%;
+} 
+.user-content table{
+    font-size: 16px;
+    table-layout: fixed;
+    text-align: center;
+}
+
+.user-content table td,.user-content table th{
+    /*width: 80px;*/
+    padding: 4px 15px;
+}
+.user-content th{
+    border-left: 1px solid #E3E2E2;
+}
+.user-content thead{
+    background-color: #5C9EFF;
+    color: #FFFFFF;
+}
+.user-content .button{
+    margin-left: 400px;
+    margin-top: 20px;
+}
+.user-content button{
+    width: 85px;
+    height: 36px;
+    margin-right: 16px;
+    background-color: #FFFFFF;
+    color: #5F5F5F;
+    cursor: pointer;
+}
+.header .search-user{
+
+    margin-left:240px;
+    margin-top:18px;
+}
+.header .search-user select{
+    width:60px;
+    height:32px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    background: url("../images/xia.png") 40px center no-repeat;
+    border:1px solid #DEDEDE;
+    margin-right:-4px;
+}
+select::-ms-expand {
+    display: none;
+ }
+.header .search-user input{
+    width:160px;
+    height:30px;
+    border:1px solid #DEDEDE;
+}
+.header .search-user button{
+    width:60px;
+    height:32px;
+    border:1px solid #DEDEDE;
+    vertical-align:-2px;
+}
+/*查看用户页面部分结束*/
+
+/*更新数据库页面部分开始*/
+/*更新数据库页面部分结束*/
+

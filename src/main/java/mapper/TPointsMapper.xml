@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.TPointsMapper" >
+  <resultMap id="BaseResultMap" type="bean.TPoints" >
+    <id column="pid" property="pid" jdbcType="INTEGER"/>
+    <result column="sid" property="sid" jdbcType="BIGINT" />
+    <result column="pointchange" property="pointchange" jdbcType="VARCHAR" />
+    <result column="changetime" property="changetime" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <!--记录积分加变化表-->
+  <insert id="insertAddTPoints">
+    insert into t_points(sid,pointchange,changetime) VALUES (#{sid},'+5',curdate())
+  </insert>
+
+  <!--记录积分减变化表-->
+  <insert id="insertReduceTPoints">
+        insert into t_points(sid,pointchange,changetime) VALUES (#{sid},'-5',curdate())
+  </insert>
+
+</mapper>

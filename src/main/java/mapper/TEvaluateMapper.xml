@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.TEvaluateMapper" >
+  <resultMap id="BaseResultMap" type="bean.TEvaluate" >
+    <id column="evaid" property="evaid" jdbcType="INTEGER" />
+    <result column="evaluator_id" property="evaluatorId" jdbcType="BIGINT" />
+    <result column="evaluator_name" property="evaluatorName" jdbcType="VARCHAR" />
+    <result column="beevaluator_id" property="beevaluatorId" jdbcType="BIGINT" />
+    <result column="beevaluator_name" property="beevaluatorName" jdbcType="VARCHAR" />
+    <result column="evaluation" property="evaluation" jdbcType="VARCHAR" />
+    <result column="evaluatescore" property="evaluatescore" jdbcType="INTEGER" />
+  </resultMap>
+
+  <sql id="Base_Column_List">
+    evaid,evaluator_id,evaluator_name,beevaluator_id,beevaluator_name,evaluation,evaluatescore
+  </sql>
+
+  <!--评价功能-->
+  <insert id="insertTEvaluate" parameterType="bean.TEvaluate">
+    insert into t_evaluate
+(evaluator_id,evaluator_name,beevaluator_id,beevaluator_name,evaluation,evaluatescore)
+VALUES (#{evaluatorId},#{evaluatorName},#{beevaluatorId},#{beevaluatorName},#{evaluation},#{evaluatescore})
+  </insert>
+
+  <!--查看自己对别人的评价-->
+  <select id="selectTEvaluateToOther" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+     <include refid="Base_Column_List"/>
+     from t_evaluate
+    where evaluator_id = #{evaluatorId}
+  </select>
+
+  <!--查看别人对自己的评价-->
+  <select id="selectTEvaluateToOwn" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from t_evaluate
+    where beevaluator_id = #{beevaluatorId}
+  </select>
+
+  <!--删除对别人的评价-->
+  <delete id="deleteTEvaluation" parameterType="java.lang.Integer">
+    delete from t_evaluate where evaid = #{evaid}
+  </delete>
+
+  <!--修改自己对别人的评价-->
+  <update id="updateTEvaluation">
+    update t_evaluate
+    set evaluation = #{evaluation} , evaluatescore = #{evaluatescore}
+    where evaid = #{evaid}
+  </update>
+
+
+</mapper>

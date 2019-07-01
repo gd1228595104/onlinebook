@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>申请审核界面</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/register.js"></script>
+	<script type="text/javascript">
+		// 选择图片显示
+        function imgChange(obj) {
+        //获取点击的文本框
+        var file =document.getElementById("file");
+        var imgUrl =window.URL.createObjectURL(file.files[0]);
+        var img =document.getElementById('imghead');
+        img.setAttribute('src',imgUrl); // 修改img标签src属性值
+        };
+	</script>
+</head>
+<body>
+	<div style="position:absolute;z-index:-1;width:100%;height:100%;">
+    	<img src="images/ba.jpg" width="100%" height="100%" />
+    </div>
+	<div class="apply-obx">
+		<a href="index.html" class="fl">返回首页</a>
+		<a href="login.html" class="fr">已有账号？去登录</a>
+		<div class="clearfix"></div>
+		<div class="bx-bx bx-bx-a">
+		<div class="inside-box apply-ibx ">
+			<img src="images/logo1.png" class="img-one">
+			<img src="images/logo2.png">
+			<form action="/StuCheck.action" method="post" enctype="multipart/form-data">
+				<label>学号：</label><input type="text" id="student-id" NAME="cSid" placeholder="请输入您的学号"><br>
+				<label>姓名：</label><input type="text" id="yourname" NAME="cName" placeholder="请输入您的姓名"><br>
+				<label>性别:</label><input type="radio" NAME="cSex" id="men" value="男">男<input type="radio" name="cSex" id="women" value="女">女<br>
+			    <label>邮箱：</label><input type="text" id="paws" NAME="cEmail" placeholder="审核结果将发送到您的邮箱"><br>
+                <label>院系：</label><input type="text" id="department" NAME="cDepartment" placeholder="请选择您所在的院系"><br>
+                <label>专业：</label><input type="text" id="major" NAME="cMajor" placeholder="请选择您的所读专业"><br>
+                <label>年级：</label><input type="text" id="grade" NAME="cGrade" placeholder="请选择您所在的年级"><br>
+                <label>班级：</label><input type="text" id="class" NAME="cClass" placeholder="请选择您所在的班级"><br>
+				<label>身份：</label><input type="text" id="idCard" NAME="cIdcard" placeholder="请输入您的身份证"><br>
+                <label>审核:</label>
+                <a href="javascript:;" class="file gradient">上传您的学生证或身份证
+                	<input type="file" name="file" id="file" accept="image/*" onchange="imgChange(this);"/>
+                </a>
+                <div id="preview">
+                <img id="imghead" src="/style/images/blank.gif"width="300"height="60" />
+                </div>
+			<button type="reset" class="again fl">重新设置</button>
+			<button class="apply-examine fr">申请审核</button>
+			</form>
+		</div>
+		</div>
+	</div>
+</body>
+</html>

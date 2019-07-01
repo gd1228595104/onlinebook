@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.TAdminMapper" >
+  <resultMap id="BaseResultMap" type="bean.TAdmin" >
+    <id column="admin" property="admin" jdbcType="VARCHAR" />
+    <result column="adminpwd" property="adminpwd" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <sql id="findWithLoginAndPdw">
+    select admin from t_admin
+    where admin=#{admin}
+    and adminpwd=#{adminpwd};
+  </sql>
+
+  <select id="findWithLoginAndPdw" resultMap="BaseResultMap">
+    <include refid="findWithLoginAndPdw"/>
+  </select>
+
+  <!-- 查询管理员账号和密码进行登录 -->
+  <select id="findByUsername" resultMap="BaseResultMap" parameterType="String">
+		select * from t_admin where admin = #{admin}
+	</select>
+
+  <update id="updateStuInfo">
+    update t_student set  `name` = #{name} ,  sex = #{sex} , department = #{department},
+     major = #{major} , grade = #{grade} , classnumber = #{classnumber} , idcard = #{idcard}
+    where sid = #{sid}
+  </update>
+</mapper>

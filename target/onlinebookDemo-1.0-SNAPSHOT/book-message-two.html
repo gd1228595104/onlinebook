@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>书本信息-two</title>
+	<link rel="stylesheet" type="text/css" href="css/message.css">
+    <link rel="stylesheet" href="layui/css/layui.css" media="all">
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/alert.js"></script>
+    <!-- <script type="text/javascript" src="js/comment.js"></script> -->
+    <script type="text/javascript" src="js/tab.js"></script>
+    <script src="layui/layui.js"></script>
+    <script type="text/javascript" src="js/util/book-message-two.js"></script>
+
+</head>
+<body>
+    
+
+	<!-- nav部分开始 -->
+    <div class="site-nav">
+    	<div class="w">
+    		<div class="fl"><a href="index.html">返回首页</a></div>
+    		<div class="fr">
+    			<ul>
+    				<li class="people">
+                        <span></span>
+                        <a href="javascript:void(0)">个人中心</a>
+                    </li>
+    				<li class="shu"></li>
+    				<li><a href="javascript:void(0)">登录</a></li>
+    				<li class="shu"></li>
+    				<li><a href="javascript:void(0)">注册</a></li>
+    				<li class="car">
+                        <a href="javascript:void(0)">
+                            <span></span>
+                            <i class="car-mag">1</i>
+                        </a>
+                    </li>
+    			</ul>
+    		</div>
+    	</div>
+    </div>
+    <!-- nav部分结束 -->
+
+    <!-- search部分开始 -->
+    <div class="search">
+        <div class="w">
+            <div class="search-logo fl">
+                <div class="search-logo1"></div>
+                <div class="search-logo2"></div>
+            </div>
+            <div class="search-book">
+                <div class="search-bookname">
+                    <a href="javascript:void(0)">书名
+                        <i><s>◇</s></i>
+                    </a>
+                </div>
+                <div class="search-more" style="display: none;">
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">小王子</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">活着</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">围城</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">百年孤独</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">我不</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">三体</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">摄影艺术</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="javascript:void(0)">追风筝的人</a>
+                        </h3>
+                        <i>></i>
+                    </div>
+                </div>
+            </div>
+            <div class="search-input">
+                <input type="text" value="请输入图书关键字" onfocus="if (value =='请输入图书关键字'){value =''}" onblur="if (value ==''){value='请输入图书关键字'}" />
+                <button>搜索</button>
+                </div>
+            <button class="search-publish" style="visibility: hidden;">发布</button>
+            <!-- <button class="search-call">联系管理员</button> -->
+            <div class="search-Alinkmore ">
+                <a href="javascript:void(0)" class="blue-red">热门搜索：</a>
+                <a href="javascript:void(0)">摆渡人</a>
+                <a href="javascript:void(0)">小王子</a>
+                <a href="javascript:void(0)">挪威的森林</a>
+                <a href="javascript:void(0)">扶摇皇后</a>
+            </div>
+        </div>
+    </div>
+    <!-- search部分结束 -->
+
+    <!-- main部分开始 -->
+    <div class="w main">
+    	<div class="fl main-left">
+    		<div class="top">
+    			<div class="image"><img src="images/9.png"></div>
+    			<div class="introdute">
+    				<p class="book-name" id="bookname">再次进击</p>
+                    <p id="booktype">书籍类别：文学</p>
+    				<p id="author">作者：潘江祥</p>
+    				<p id="publishPlace">出版社：九州出版社</p>
+    				<p id="status">状态：</p>
+                    <br/>
+    				<button class="save"><span class="xin">❤</span>收藏</button>
+                    <br/>
+                    <button class="applybook layui-btn-normal layui-btn" id="applyButton">申请借书</button>
+    			</div>
+    			<div id="borrower-message" class="hide">
+                    <p>姓名：林琳</p>
+                    <p>院系：电子信息工程学院</p>
+                    <p>专业班级：电子16-1</p>
+                    <p>联系方式：12345678901</p>
+          </div>
+    		</div>
+    		<div class="bottom">
+          <div id="evaluate-publisher" class="hide">
+            <textarea></textarea>
+            <button class="cancle-submit">取消</button>
+            <button class="submit-content">提交</button>
+          </div>
+    			<p class="bottom-nav">
+    				<a href="#1" class="current">内容简介</a>
+    				<a href="#2">发布者信息</a>
+    			</p>
+    			<div id="1">
+                    <p class="title">内容简介</p>
+                    <p class="content">对图书行业充满热情的新编辑张晗君刚入职，就面临了主管即将离职，部门要原地解散的窘境.
+                    <br>
+                    这是一个被称为夕阳行业中吊车尾的文化公司，有混日子的老员工，有想上位的野心家，有什么都不懂的小白，也有曾经离开却又重新回归出版行业的上司。不可能完成的任务，各有打算的同事，在军令状不达任务就解散的困境下，克服重重困难，努力朝着自己心中的梦想而各自努力着。
+                    </p>
+                        
+                </div>
+    			<div id="2">
+                    <p class="title">发布者信息</p>
+                    <div class="content">
+                        <p id="loanerName">用户名：琳琳琳</p>
+                        <p id="stuId">学号：16034520106</p>
+                        <p id="department">学院</p>
+                        <p id="major">专业：电子16-1</p>
+                        <p id="status2">借阅情况：未借出</p>
+                    </div>
+                    <button class="evaluate-publisher">联系评价者</button>
+                    <a target="blank"><button class="call-publisher" id="chatTiao">联系发布者</button></a>
+                    <!-- <button class="call-publisher">联系发布者</button> -->
+                </div>
+    		</div>
+    	</div>
+    	<div class="fr main-right">
+    		<div class="borrow-message">
+                <table rules="none" id="borrowInfo" lay-filter="borrowInfoFilter"></table>
+            <!--<table rules="none" id="borrowInfo">-->
+              <!--<tr>-->
+                  <!--<td class="current">借阅信息</td>-->
+                  <!--<td colspan="2">more+</td>-->
+              <!--</tr>-->
+              <!--<tr class="header">-->
+                  <!--<td>出借人</td>-->
+                  <!--<td>账号</td>-->
+                  <!--<td>借阅情况</td>-->
+              <!--</tr>-->
+              <!--<tr>-->
+                  <!--<td>最后</td>-->
+                  <!--<td>17819185832</td>-->
+                  <!--<td class="borrower-message">未借出</td>-->
+              <!--</tr>-->
+              <!--<tr>-->
+                  <!--<td>最后</td>-->
+                  <!--<td>18825536648</td>-->
+                  <!--<td class="borrower-message">已借出</td>-->
+              <!--</tr>-->
+              <!--<tr>-->
+                  <!--<td>最后</td>-->
+                  <!--<td>18825536648</td>-->
+                  <!--<td class="borrower-message">未借出</td>-->
+              <!--</tr>-->
+              <!--<tr>-->
+                  <!--<td>最后</td>-->
+                  <!--<td>18825536648</td>-->
+                  <!--<td class="borrower-message">已借出</td>-->
+              <!--</tr>-->
+            <!--</table>      -->
+            </div>
+    		<div class="more">
+                <p class="more-nav">
+                    <a href="javascript:void(0)" class="current">读了此书还读了</a>
+                    <a href="javascript:void(0)" class="second">more+</a>
+                </p> 
+                <div class="more-box-one more-box">
+                    <img src="images/2.png" class="img-one">
+                    
+                    <div class="more-box-first fr">
+                       <p class="more-box-book-name">偷书贼</p>
+                       <p>作者：[澳]马库斯·苏萨克</p>
+                       <p>简介：二战期间，九岁的德 国姑娘莉泽尔和弟弟被送往 寄养家庭。弟弟不幸…</p> 
+                    </div>
+                    
+                </div>
+                <div class="more-box">
+                    <img src="images/4.png">
+                    
+                    <div class="more-box-second fr">
+                        <p class="more-box-book-name">癌症·真相</p>
+                        <p>作者：菠萝</p>
+                        <p>简介：这 不是一本“心灵鸡 汤”，不会保证任 何癌症都 是可以战胜的，但会告诉你…</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+    	</div>
+    </div>
+    <!-- main部分结束 -->
+    <div class="clearfix"></div>
+    <!-- footer部分开始 -->
+    <div class="footer-box">
+    <div class="footer-bottom w">
+        <div class="footer-bottom-links">
+            <a href="javascript:void(0)">网站首页</a>|
+            <a href="javascript:void(0)">网站简介</a>|
+            <a href="javascript:void(0)">图书排行榜</a>|
+            <a href="javascript:void(0)">联系管理员</a>|
+            <a href="javascript:void(0)">意见反馈</a>|
+            <a href="javascript:void(0)">联系我们</a>|
+            <a href="javascript:void(0)">免费注册</a>|
+            <a href="javascript:void(0)">常见问题</a>
+        </div>
+        <div class="footer-bottom-copyright">
+            <p>版权归友书借书网所有</p>
+            <p>地址：广东省茂名市茂南区官渡二路广东石油化工学院</p>
+            <p>邮箱：123456789@qq.com</p>
+            <p>电话：17819185555</p>
+        </div>
+    </div>
+    </div>
+    <!-- footer部分结束 -->
+    
+
+	
+</body>
+</html>

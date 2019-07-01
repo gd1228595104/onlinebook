@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.THopebookMapper" >
+  <resultMap id="BaseResultMap" type="bean.THopebook" >
+    <id column="hopeid" property="hopeid" jdbcType="INTEGER" />
+    <result column="sid" property="sid" jdbcType="BIGINT" />
+    <result column="hopebookname" property="hopebookname" jdbcType="VARCHAR" />
+    <result column="author" property="author" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <sql id="sql_Base_Columns">
+    hopeid,hopebookname,author
+  </sql>
+
+  <!--发布希望书籍-->
+  <insert id="insertHopeBookList" parameterType="java.util.List">
+    insert into t_hopebook(hopeid,sid,hopebookname,author) VALUES
+    <foreach collection="list" item="item" index="index" separator=",">
+      ( #{item.hopeid},#{item.sid},#{item.hopebookname},#{item.author} )
+    </foreach>
+  </insert>
+
+  <!--查看自己发布的希望书籍-->
+  <select id="findHopeBook" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    <include refid="sql_Base_Columns"/>
+    from t_hopebook where sid = #{sid}
+  </select>
+</mapper>

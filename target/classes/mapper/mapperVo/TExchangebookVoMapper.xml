@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.mapperVo.TExchangebookVoMapper" >
+  <resultMap id="BaseResultMap" type="bean.vo.TExchangebookVo">
+    <id column="eid" property="eid" jdbcType="INTEGER" />
+    <result column="bookid" property="bookid" jdbcType="INTEGER" />
+    <result column="borrower_id" property="borrowerId" jdbcType="BIGINT" />
+    <result column="borrower_name" property="borrowerName" jdbcType="VARCHAR" />
+    <result column="starttime" property="starttime" jdbcType="VARCHAR" />
+    <result column="stoptime" property="stoptime" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="VARCHAR" />
+    <association property="tInactivebook" column="bookid" javaType="bean.TInactivebook">
+      <id column="bookid" property="bookid" jdbcType="INTEGER" />
+      <result column="inactivebookname" property="inactivebookname" jdbcType="VARCHAR" />
+      <result column="loaner_id" property="loanerId" jdbcType="BIGINT" />
+      <result column="loaner_name" property="loanerName" jdbcType="VARCHAR" />
+      <result column="status" property="status" jdbcType="VARCHAR" />
+      <result column="photo" property="photo" jdbcType="VARCHAR" />
+    </association>
+  </resultMap>
+
+  <!--查看自己待借入的书籍-->
+  <select id="findBorrowBook" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select e.eid,e.stoptime,i.bookid,i.inactivebookname,i.loaner_id,i.loaner_name from t_exchangebook e,t_inactivebook i
+    where e.status in ('待通过','待确定') and e.bookid = i.bookid and e.borrower_id = #{borrowerId}
+  </select>
+
+    <!--查看待借出的书籍-->
+    <select id="findLendBook" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        select i.bookid,i.inactivebookname,e.eid,e.borrower_id,e.borrower_name from t_inactivebook i,t_exchangebook e
+        where i.`status` = '待借' and e.`status` in ('待确定','待通过')
+        and i.bookid = e.bookid
+        and i.loaner_id = #{loanerId}
+    </select>
+
+  <!--查看已借入的书籍-->
+  <select id="findBorrowedBook" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select e.eid,e.bookid,i.inactivebookname,i.loaner_id,i.loaner_name,e.stoptime,e.`status`
+    from t_exchangebook e,t_inactivebook i
+     where e.bookid = i.bookid and e.`status` in('未还','已还')
+     and e.borrower_id = #{borrowerId}
+  </select>
+
+  <!--查看已借出的书籍-->
+  <select id="findLendedBook" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    SELECT e.eid,i.bookid,i.inactivebookname,e.borrower_id,e.borrower_name,e.stoptime,e.`status` from t_exchangebook e,t_inactivebook i
+    where e.bookid = i.bookid
+    and i.`status`='已借'
+    and e.`status` in ('未还','已还')
+    and i.loaner_id = #{loanerId}
+  </select>
+
+  <!---->
+</mapper>

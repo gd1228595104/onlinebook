@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>私信小窗</title>
+	<link rel="stylesheet" type="text/css" href="css/chat.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/chat.js"></script>
+</head>
+<style>
+  .fix{
+
+    position: fixed;
+    top: 200px;
+    left: 70%;
+  }
+</style>
+<body>
+<div class="fix">
+  <ul id="onlineUser" class="list-group">
+<!--    <li class="list-group-item">Cras justo odio</li>-->
+<!--    <li class="list-group-item">Dapibus ac facilisis in</li>-->
+<!--    <li class="list-group-item">Morbi leo risus</li>-->
+<!--    <li class="list-group-item">Porta ac consectetur ac</li>-->
+<!--    <li class="list-group-item">Vestibulum at eros</li>-->
+  </ul>
+</div>
+  <div style="position:absolute;z-index:-1;width:100%;height:100%;">
+      <img src="images/ba.jpg" width="100%" height="100%" />
+  </div>
+	<div class="message-panel panel panel-default">
+
+    <div class="panel-heading">
+      <h1 class="panel-title" id="toName">小姐姐</h1>
+    </div>
+    
+    <div class="panel-body">
+
+      <div style='display:none' class="sister media">
+        <div class="media-left">
+          <a href="#">
+            <img class="media-object" src="images/me.png" alt="...">
+          </a>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading"></h4>
+          <p>我去洗澡了</p>
+        </div>
+      </div>
+
+
+      <div style='display:none' class="someOne media">
+        <div class="media-body">
+          <h4 class="media-heading"></h4>
+          <p>请你吃西兰花炒蛋</p>
+        </div>
+        <div class="media-right">
+          <a href="#">
+            <img class="media-object" src="images/you.png" alt="...">
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="panel-footer">
+      <!-- <input class='info' type="text" placeholder="请输入你想跟小姐姐说的内容"> -->
+      <div class="info" type="text" contenteditable="true">
+      </div>
+      <!-- <textarea class="info" type="text" placeholder="请输入你想跟小姐姐说的内容">
+      </textarea> --><button class="send but">发送</button>
+      <!-- <input class='send btn btn-info btn-lg' type="button" value='发送'> -->
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.THobbiesMapper" >
+  <resultMap id="BaseResultMap" type="bean.THobbies" >
+    <id column="sid" property="sid" jdbcType="BIGINT" />
+    <result column="hobbies" property="hobbies" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <insert id="chooseHobbies">
+    insert into t_hobbies (sid,hobbies) values (#{sid},#{hobbies})
+  </insert>
+
+  <delete id="deleteHobbies">
+    delete from t_hobbies where sid = #{sid}
+  </delete>
+</mapper>

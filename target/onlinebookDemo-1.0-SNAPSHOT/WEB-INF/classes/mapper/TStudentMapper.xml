@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.TStudentMapper" >
+  <resultMap id="BaseResultMap" type="bean.TStudent" >
+    <id column="sid" property="sid" jdbcType="BIGINT" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="sex" property="sex" jdbcType="VARCHAR" />
+    <result column="department" property="department" jdbcType="VARCHAR" />
+    <result column="major" property="major" jdbcType="VARCHAR" />
+    <result column="grade" property="grade" jdbcType="VARCHAR" />
+    <result column="classnumber" property="classnumber" jdbcType="VARCHAR" />
+    <result column="phone" property="phone" jdbcType="BIGINT" />
+    <result column="email" property="email" jdbcType="VARCHAR" />
+    <result column="idcard" property="idcard" jdbcType="VARCHAR" />
+    <result column="points" property="points" jdbcType="INTEGER" />
+    <result column="credit" property="credit" jdbcType="INTEGER" />
+    <result column="status" property="status" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    sid,password,`name`,sex,department,major,grade,classnumber,phone,email,idcard,points,credit
+  </sql>
+
+  <!--<select id="findAllStu" resultMap="BaseResultMap">-->
+    <!--select-->
+     <!--*-->
+    <!--from t_student-->
+  <!--</select>-->
+
+  <!--后台管理根据学号查询用户-->
+  <select id="findUserBySid" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from t_student
+    where sid = #{sid}
+  </select>
+
+  <!--后台管理根据姓名查找用户-->
+  <select id="findUserByName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select <include refid="Base_Column_List"/>
+    from t_student
+    where `name` = #{name}
+  </select>
+
+  <!--后台管理根据院系查找用户-->
+  <select id="findUserByDepartment" parameterType="java.lang.String" resultMap="BaseResultMap">
+  select <include refid="Base_Column_List"/>
+  from t_student
+  where department = #{department}
+  </select>
+
+  <!--后台管理根据专业查找用户-->
+  <select id="findUserByMajor" parameterType="java.lang.String" resultMap="BaseResultMap">
+  select <include refid="Base_Column_List"/>
+  from t_student
+  where major = #{major}
+  </select>
+
+
+  <select id="findWithLoginAndPdw" resultMap="BaseResultMap">
+    select sid,password,`name` from t_student
+    where sid=#{sid}
+    and password=#{password}
+  </select>
+
+
+
+  <!--后台根据选择的院系返回可选择的选项-->
+  <select id="findResultByDepart" resultMap="BaseResultMap">
+    select DISTINCT department from t_student
+  </select>
+
+  <!--后台根据选择的专业返回可选择的选项-->
+  <select id="findResultByMajor" resultMap="BaseResultMap">
+    select DISTINCT major from t_student
+  </select>
+
+  <!--查询积分-->
+  <select id="selectPoints" parameterType="java.lang.Long" resultType="java.lang.Integer">
+      select points from t_student where sid = #{sid}
+  </select>
+
+  <!--注册功能-->
+  <update id="checkStuInfo" parameterType="bean.TStudent">
+    update t_student set status = '已激活'
+    <if test="password!=null and password!=''">
+      ,password = #{password}
+    </if>
+    where sid = #{sid} and `name` = #{name} and sex = #{sex} and department = #{department}
+    and major = #{major} and grade = #{grade} and classnumber = #{classnumber} and idcard = #{idcard}
+  </update>
+
+  <!--修改密码-->
+  <update id="resetPwd">
+    update t_student
+    set password = #{newPwd}
+    where
+    sid = #{sid} and password = #{password}
+  </update>
+  <!--积分加5分-->
+  <update id="updateAddPoints" parameterType="java.lang.Long">
+    update t_student set points = points + 5 where sid =  #{sid}
+  </update>
+
+  <!--积分减5分-->
+  <update id="updateReducePoints" parameterType="java.lang.Long">
+    update t_student set points = points - 5 where sid =  #{sid}
+  </update>
+
+  <select id="selectAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"></include>
+    from t_student
+  </select>
+</mapper>
